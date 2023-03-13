@@ -68,11 +68,19 @@
 .nav-bar-img ul {
     justify-content: space-between;
 }
+.card-content{
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .activity {
     border: 4px solid var(--color3);
     border-radius: 8px;
     width: 80vw;
+    max-width: 1100px;
     margin: 0 auto;
     margin-top: 12px;
     padding: 4px;
@@ -87,10 +95,37 @@
     font-weight: bold;
     text-align: center;
 }
-
+.activity-text{
+    min-width: 240px;
+}
 .activity p {
     font-size: 14px;
 }
-.card-content{
-    padding: 16px;
+.imgs{
+    position: relative;
+    height: 160px;
+    min-height: 160px;
+    width: 240px;
+    min-width: 240px;
+
+}
+.hexagono{
+    width: 48px;
+}
+.up{
+    position: absolute;
+    top: 12px;
+    left: 72px;
+}
+.center{
+    position: absolute;
+    top: 52px;
+}
+.bot{
+    position: absolute;
+    top: 92px;
+    left: 24px;
+}
+.bot1{
+    margin-right: 96px;
 }

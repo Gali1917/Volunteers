@@ -17,7 +17,7 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path="/account" element={<Account />} />
+          <Route path="/" element={<Account />} />
         </Routes>
       </main>
     </div>

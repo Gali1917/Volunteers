@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import "../styles/account.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCameraRetro } from "@fortawesome/free-solid-svg-icons";
-import { faBell } from "@fortawesome/free-regular-svg-icons";
+import Hexagon from "react-hexagon";
 
 const Account = () => {
+  const imagenprueba = "https://images.pexels.com/photos/1456291/pexels-photo-1456291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+  const size = "48px";
   return (
     <main>
       <section className="head-perfil">
@@ -46,12 +48,26 @@ const Account = () => {
               <p>9. Organizar un evento sin usar desechables.</p>
             </div>
             <div className="imgs">
-
+              <div className="card-img up">
+                <Hexagon className="hexagono"/>
+                <Hexagon className="hexagono" />
+              </div>
+              <div className="card-img center">
+                <Hexagon className="hexagono" />
+                <Hexagon className="hexagono" />
+                <Hexagon className="hexagono" />
+                <Hexagon className="hexagono" />
+                <Hexagon className="hexagono" />
+              </div>
+              <div className="card-img bot">
+                <Hexagon className="hexagono bot1" />
+                <Hexagon className="hexagono bot2" />
+              </div>
             </div>
           </div>
         </article>
         <article className="activity">
-        <div className="activity-head">
+          <div className="activity-head">
             ACTIVIDADES NIVEL 2
           </div>
           <div className="card-content">
@@ -73,7 +89,27 @@ const Account = () => {
           </div>
         </article>
         <article className="activity">
+          <div className="activity-head">
+            ACTIVIDADES NIVEL 3
+          </div>
+          <div className="card-content">
 
+            <div className="activity-text">
+              <p>19. Por la seguridad alimentaria, inicia un herto organico.</p>
+              <p>20. Idear metodo para reducir consumo de agua en el hogar.</p>
+              <p>21. Construir un articulo con material reciclado.</p>
+              <p>22. Investigar la importancia de las abejas.</p>
+              <p>23. Investigar una norma ambiental de su interes.</p>
+              <p>24. Realizar investigacion exhaustiva sobre cambio climatico.</p>
+              <p>25. Fotografia un paisaje y describe sus servicios ecosistemicos.</p>
+              <p>26. Investigar sobre la procrastinacion y ponerla en practica.</p>
+              <p>27. Comentar nueve (9) actividades de otros Volunteers.</p>
+
+            </div>
+            <div className="imgs">
+
+            </div>
+          </div>
         </article>
       </section>
     </main>
