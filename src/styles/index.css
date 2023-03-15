@@ -1,0 +1,31 @@
+:root {
+    --color1: #aff02e;
+    --color2: #343033;
+    --color3: #12b318;
+    --color4: #131313;
+    --color5: #b3b3b1;
+}
+.frontpage{
+    width: 100vw;
+    height: 70vh;
+    margin-bottom: 72px;
+}
+.frontpage h1{
+    background-color: var(--color2);
+    color: var(--color1);
+    text-align: center;
+}
+
+.frontpage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.welcome{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 24px;
+}

@@ -11,16 +11,22 @@ function App() {
         <img src="https://i.postimg.cc/Hsv3vdrn/logo.png" alt="logo" className="logo" />
         <nav>
           <ul>
-            <li className='primary-bottom'>
-              <Link to={"/"}>INICIO</Link>
+            <Link to={"/"}>
+              <li className='primary-bottom'>
+                INICIO
 
-            </li>
-            <li className='primary-bottom'>
-              <Link to={"/content"}>CONTENIDO</Link>
-            </li>
-            <li className='primary-bottom'>
-              <Link to={"/account"}>MI CUENTA</Link>
-            </li>
+              </li>
+            </Link>
+            <Link to={"/content"}>
+              <li className='primary-bottom'>
+                CONTENIDO
+              </li>
+            </Link>
+            <Link to={"/account"}>
+              <li className='primary-bottom'>
+                MI CUENTA
+              </li>
+            </Link>
           </ul>
         </nav>
       </header>
