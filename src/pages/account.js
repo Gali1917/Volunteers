@@ -6,8 +6,7 @@ import { faCameraRetro } from "@fortawesome/free-solid-svg-icons";
 import Hexagon from "react-hexagon";
 
 const Account = () => {
-  const imagenprueba = "https://images.pexels.com/photos/1456291/pexels-photo-1456291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
-  const size = "48px";
+
   return (
     <main>
       <section className="head-perfil">
@@ -49,7 +48,7 @@ const Account = () => {
             </div>
             <div className="imgs">
               <div className="card-img up">
-                <Hexagon className="hexagono"/>
+                <Hexagon className="hexagono" />
                 <Hexagon className="hexagono" />
               </div>
               <div className="card-img center">
@@ -61,7 +60,7 @@ const Account = () => {
               </div>
               <div className="card-img bot">
                 <Hexagon className="hexagono bot1" />
-                <Hexagon className="hexagono bot2" />
+                <Hexagon className="hexagono" />
               </div>
             </div>
           </div>
@@ -83,8 +82,26 @@ const Account = () => {
               <p>17. No comer carne, pollo, pescado o embutidos en un dia.</p>
               <p>18. Mejorar la condicion de otro ser vivo.</p>
             </div>
-            <div className="imgs">
-
+            <div className="imgs2">
+              <div className="card-img f1">
+                <Hexagon className="hexagono" />
+              </div>
+              <div className="card-img f2">
+                <Hexagon className="hexagono h1" />
+                <Hexagon className="hexagono h2" />
+              </div>
+              <div className="card-img f3">
+                <Hexagon className="hexagono h1" />
+                <Hexagon className="hexagono h2" />
+                <Hexagon className="hexagono h3" />
+              </div>
+              <div className="card-img f4">
+                <Hexagon className="hexagono h1" />
+                <Hexagon className="hexagono h2" />
+              </div>
+              <div className="card-img f5">
+                <Hexagon className="hexagono" />
+              </div>
             </div>
           </div>
         </article>
@@ -106,11 +123,32 @@ const Account = () => {
               <p>27. Comentar nueve (9) actividades de otros Volunteers.</p>
 
             </div>
-            <div className="imgs">
-
+            <div className="imgs3">
+              <div className="card-img f1">
+                <Hexagon className="hexagono" />
+              </div>
+              <div className="card-img f2">
+                <Hexagon className="hexagono h1" />
+                <Hexagon className="hexagono h2" />
+              </div>
+              <div className="card-img f3">
+                <Hexagon className="hexagono h1" />
+                <Hexagon className="hexagono h2" />
+                <Hexagon className="hexagono h3" />
+              </div>
+              <div className="card-img f4">
+                <Hexagon className="hexagono h1" />
+                <Hexagon className="hexagono h2" />
+              </div>
+              <div className="card-img f5">
+                <Hexagon className="hexagono" />
+              </div>
             </div>
           </div>
         </article>
+        <div className="pdf">
+          <Link className="second-buttom certificado" id="certificado">OBTEN TU CERTIFICADO</Link>
+        </div>
       </section>
     </main>
   )
