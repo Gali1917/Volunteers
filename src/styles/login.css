@@ -1,0 +1,107 @@
+:root{
+    --color1: #aff02e;
+    --color2: #343033;
+    --color3: #12b318;
+    --color4: #131313;
+    --color5: #b3b3b1;
+    --color6: #0e1215;
+}
+.main{
+    background-color: var(--color6);
+    min-height: calc(100vh - 68px);
+    color: white;
+}
+.logopage{
+    width: 100%;
+}
+.logopage img{
+    width: 100%;
+}
+.form h2{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.input-label{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+.img-icon-user{
+    background-color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -4px;
+    left: -16px;
+
+}
+.icono{
+    color: black;
+    margin: 0;
+}
+.input-label .icono{
+    position: absolute;
+}
+.input-label label{
+    position: absolute;
+    top: 0px;
+    left: 62px;
+    color: var(--color1);
+    height: 32px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.input-label input{
+    background-color: var(--color2);
+    height: 32px;
+    text-align: center;
+    border-radius: 20px;
+    border: 0;
+}
+
+.img-icon-password{
+    background-color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -4px;
+    right: -16px;
+}
+.buttons{
+    width: 180px;
+    margin: 0 auto;
+    position: relative;
+}
+.buttons button{
+    background-color: white;
+    height: 32px;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    border: 0;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.button-enter{
+    color: #08390a;
+    text-align: center;
+
+}
