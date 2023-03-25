@@ -14,114 +14,92 @@
     background-color: var(--color6);
     color: white;
 }
-.section-login{
+.section-signup{
     max-width: 560px;
     margin: 0 auto;
+    padding-top: 24px;
 }
-.logopage{
-    width: 100%;
-}
-.logopage img{
-    width: 100%;
-}
-.form h2{
+span{
+    display: block;
+    font-size: 30px;
     text-align: center;
-    font-size: 16px;
-    margin-bottom: 8px;
+    color: var(--color1);
+    margin-bottom: 16px;
 }
-.input-label{
+
+.input-label-signup{
     display: flex;
     flex-direction: column;
-    width: 180px;
+    width: 220px;
     position: relative;
     margin: 0 auto;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
+    
 }
-.img-icon-user{
-    background-color: white;
-    width: 36px;
-    height: 36px;
+.img-icon{
+    background-color: none;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
-    border: 1px solid black;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: -4px;
-    left: -16px;
-
+    top: 2px;
 }
-.icono{
-    color: black;
-    margin: 0;
+.world{
+    right: 0;
 }
-.input-label .icono{
+.input-label-signup .icono{
     position: absolute;
+    width: 100%;
 }
-.input-label label{
+.input-label-signup label{
     position: absolute;
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--color1);
+    color: black;
     height: 32px;
     text-align: center;
     font-weight: bold;
+    font-size: 14px;
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
-.input-label input{
-    background-color: var(--color2);
-    height: 32px;
-    text-align: center;
-    border-radius: 20px;
-    border: 0;
-}
-
-.img-icon-password{
+.input-label-signup input{
     background-color: white;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: -4px;
-    right: -16px;
-}
-.buttons{
-    width: 180px;
-    margin: 0 auto;
-    position: relative;
-}
-.buttons button{
     height: 32px;
-    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    border: 0;
+}
+
+.button-enter{
+    width: 200px;
+    height: 32px;
+    margin: 0 auto;
     border-radius: 20px;
     border: 0;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 12px;
-}
-.button-enter{
-    color: #08390a;
     display: flex;
     align-items: center;
     justify-content: center;
-
-}
-.icon-enter{
-    font-size: 20px;
-    margin-left: 8px;
-}
-.button-signin{
     background-color: var(--color1);
-
 }
-.button-signin a{
-    color: #08390a;
+.button-enter a{
+    color: white;
+}
+.terminosycondiciones{
+    display: block;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
 }
 @media(min-width: 422px) {
     body{

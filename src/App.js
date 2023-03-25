@@ -4,7 +4,7 @@ import Account from './pages/account';
 import Index from './pages';
 import Content from './pages/content/content';
 import Login from './pages/forms/login';
-import SignIn from './pages/forms/signin';
+import SignUp from './pages/forms/signUp';
 
 function App() {
   return (
@@ -41,7 +41,7 @@ function App() {
           <Route path="/content" element={<Content />} />
           <Route path="/account" element={<Account />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
       </main>
     </div>

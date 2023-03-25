@@ -10,7 +10,6 @@ import('../../styles/login.css');
 const Login = () => {
     return (
         <body className="body">
-
             <main className="main">
                 <section className="section-login">
                     <div className="logopage">
@@ -30,7 +29,7 @@ const Login = () => {
                             <div className="input-label">
                                 <input type="text"
                                     placeholder="Password" />
-                                <label htmlFor="usuario">Usuario</label>
+                                <label htmlFor="usuario">Contraseña</label>
                                 <div className="img-icon-password">
                                     <FontAwesomeIcon className="icono" icon={faUnlockKeyhole} />
                                 </div>
@@ -44,7 +43,7 @@ const Login = () => {
                                     </Link>
                                 </button>
                                 <button className="button-signin">
-                                    <Link to="/signin" className="">
+                                    <Link to="/signup" className="">
                                         REGISTRARSE
                                     </Link>
                                 </button>
