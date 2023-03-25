@@ -77,12 +77,12 @@ const SignUp = () => {
                                     <img className="icono" src="https://i.postimg.cc/gcZRvpP8/mundo.png" alt="" />
                                 </div>
                             </div>
-                            <button className="button-enter">
-                                <Link to="/signup" className="">
+                            <button className="button-enter-signup">
+                                <Link to="/account" className="">
                                     SUMATE A LA ACCION
                                 </Link>
                             </button>
-                            <Link to="/signup" className="terminosycondiciones">
+                            <Link to="/conditions" className="terminosycondiciones">
                                 Terminos & Condiciones
                             </Link>
                         </form>

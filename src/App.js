@@ -5,6 +5,7 @@ import Index from './pages';
 import Content from './pages/content/content';
 import Login from './pages/forms/login';
 import SignUp from './pages/forms/signUp';
+import Conditions from './pages/conditions';
 
 function App() {
   return (
@@ -42,6 +43,8 @@ function App() {
           <Route path="/account" element={<Account />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/conditions" element={<Conditions />} />
+
         </Routes>
       </main>
     </div>

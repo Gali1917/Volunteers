@@ -36,17 +36,17 @@ const Login = () => {
 
                             </div>
                             <div className="buttons">
-                                <button>
-                                    <Link to="/account" className="button-enter">
+                                <Link to="/account" className="button-enter">
+                                    <button>
                                         Actua por el planeta
                                         <FontAwesomeIcon className="icono icon-enter" icon={faArrowAltCircleRight} />
-                                    </Link>
-                                </button>
-                                <button className="button-signin">
-                                    <Link to="/signup" className="">
+                                    </button>
+                                </Link>
+                                <Link to="/signup" className="">
+                                    <button className="button-signin">
                                         REGISTRARSE
-                                    </Link>
-                                </button>
+                                    </button>
+                                </Link>
                             </div>
                         </form>
                     </div>
