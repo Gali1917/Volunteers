@@ -47,82 +47,56 @@ const Account = () => {
               <p><span className="number-activity">9.</span> Organice un compa sin usar desechables e invite a familiares y amigos, describa las alternativas que utilizo y comparta fotografías con los invitados.</p>
             </div>
             <div className="activity-images">
-
-              <div className="hexagonpng">
-                <div className="imgspng">
-                  <div className="card-imgpng uppng image">
-                    <img src="https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-                    <img src="https://images.pexels.com/photos/2265247/pexels-photo-2265247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-                  </div>
-                  <div className="card-imgpng centerpng image">
-                    <img src="https://images.pexels.com/photos/14218611/pexels-photo-14218611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-                    <img src="https://images.pexels.com/photos/14197381/pexels-photo-14197381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-                    <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-                    <img src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-                    <img src="https://images.pexels.com/photos/414181/pexels-photo-414181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-                  </div>
-                  <div className="card-imgpng botpng image">
-                    <img src="https://images.pexels.com/photos/8797307/pexels-photo-8797307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-                    <img src="https://images.pexels.com/photos/129574/pexels-photo-129574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-                  </div>
-                </div>
+              <div className="card-imgpng uppng image">
+                <img src="https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                <img src="https://images.pexels.com/photos/2265247/pexels-photo-2265247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
               </div>
-              <div className="hexagonpng">
-                <div className="imgspng">
-                  <div className="card-imgpng uppng">
-                    <img className="hexagon-1" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
-                    <img className="hexagon-2" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
-                  </div>
-                  <div className="card-imgpng centerpng">
-                    <img className="hexagon-3" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
-                    <img className="hexagon-4" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
-                    <img className="hexagon-5" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
-                    <img className="hexagon-6" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
-                    <img className="hexagon-7" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
-                  </div>
-                  <div className="card-imgpng botpng">
-                    <img className="hexagon-8" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
-                    <img className="hexagon-9" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
-                  </div>
-                </div>
+              <div className="card-imgpng centerpng image">
+                <img src="https://images.pexels.com/photos/14218611/pexels-photo-14218611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                <img src="https://images.pexels.com/photos/14197381/pexels-photo-14197381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                <img src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                <img src="https://images.pexels.com/photos/414181/pexels-photo-414181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+              </div>
+              <div className="card-imgpng botpng image">
+                <img src="https://images.pexels.com/photos/8797307/pexels-photo-8797307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                <img src="https://images.pexels.com/photos/129574/pexels-photo-129574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+              </div>
+              <div className="card-imgpng uppng">
+                <img className="hexagon-1" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
+                <img className="hexagon-2" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
+              </div>
+              <div className="card-imgpng centerpng">
+                <img className="hexagon-3" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
+                <img className="hexagon-4" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
+                <img className="hexagon-5" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
+                <img className="hexagon-6" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
+                <img className="hexagon-7" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
+              </div>
+              <div className="card-imgpng botpng">
+                <img className="hexagon-8" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
+                <img className="hexagon-9" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
               </div>
 
-              <div className="hexagonpng imgs">
+              {/* <div className="hexagonpng imgs">
                 <div className="imgspng p">
                   <div className="card-imgpng uppng">
-                    <p>1...</p>
-                    <p>2...</p>
-                  </div>
-                  <div className="card-imgpng centerpng">
-                    <p>3...</p>
                     <p>4...</p>
                     <p>5...</p>
+                  </div>
+                  <div className="card-imgpng centerpng">
+                    <p>1...</p>
+                    <p>3...</p>
                     <p>6...</p>
                     <p>7...</p>
+                    <p>9...</p>
                   </div>
                   <div className="card-imgpng botpng">
-                    <p>8...</p>
-                    <p className="number-9">9...</p>
+                    <p>2...</p>
+                    <p className="number-9">8...</p>
                   </div>
                 </div>
-              </div>
-              {/* <div className="imgs">
-              <div className="card-img up">
-                <Hexagon className="hexagono" />
-                <Hexagon className="hexagono" />
-              </div>
-              <div className="card-img center">
-                <Hexagon className="hexagono" />
-                <Hexagon className="hexagono" />
-                <Hexagon className="hexagono" />
-                <Hexagon className="hexagono" />
-                <Hexagon className="hexagono" />
-              </div>
-              <div className="card-img bot">
-                <Hexagon className="hexagono bot1" />
-                <Hexagon className="hexagono" />
-              </div>
-            </div> */}
+              </div> */}
             </div>
 
           </div>
