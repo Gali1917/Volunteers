@@ -28,7 +28,7 @@ const SignUp = () => {
                                     <img src="" alt="" />
                                 </div>
                                 <label htmlFor="email">Correo electronico</label>
-                                <input className="cred" type="text" id="email" />
+                                <input className="cred" type="email" id="email" />
 
                             </div><div className="input-label-signup">
                                 <div className="img-icon">
@@ -36,7 +36,7 @@ const SignUp = () => {
                                     <img src="" alt="" />
                                 </div>
                                 <label htmlFor="phone">Numero de telefono</label>                
-                                <input className="cred" type="text" id="phone" />
+                                <input className="cred" type="number" id="phone" />
 
                             </div><div className="input-label-signup">
                                 <div className="img-icon">
@@ -44,7 +44,7 @@ const SignUp = () => {
                                     <img src="" alt="" />
                                 </div>
                                 <label htmlFor="document">Numero de documento</label>
-                                <input className="cred" type="text" id="document" />
+                                <input className="cred" type="number" id="document" />
 
                             </div><div className="input-label-signup">
                                 <div className="img-icon">
@@ -52,7 +52,7 @@ const SignUp = () => {
                                     <img src="" alt="" />
                                 </div>
                                 <label htmlFor="password">Contraseña</label>
-                                <input className="cred" type="text" id="password" />
+                                <input className="cred" type="password" id="password" />
 
                             </div><div className="input-label-signup">
                                 <div className="img-icon">
@@ -60,7 +60,7 @@ const SignUp = () => {
                                     <img src="" alt="" />
                                 </div>
                                 <label htmlFor="repeat-password">Repetir Contraseña</label>
-                                <input className="cred" type="text" id="repeat-password" />
+                                <input className="cred" type="password" id="repeat-password" />
 
                             </div><div className="input-label-signup">
                                 <div className="img-icon">

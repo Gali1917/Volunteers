@@ -27,9 +27,8 @@ const Login = () => {
                                 <input className="cred" type="text" id="usuario" />
                             </div>
                             <div className="input-label">
-                                <input type="text"
-                                    placeholder="Password" />
-                                <label htmlFor="usuario">Contraseña</label>
+                                <label htmlFor="password">Contraseña</label>
+                                <input type="password" id="password"/>
                                 <div className="img-icon-password">
                                     <FontAwesomeIcon className="icono" icon={faUnlockKeyhole} />
                                 </div>

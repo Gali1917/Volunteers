@@ -36,15 +36,15 @@ const Account = () => {
           <div className="card-content">
 
             <div className="activity-text">
-              <p>1. Copiar las 27 actividades en hoja reciclada.</p>
-              <p>2. Bodar, estampar logo VOLUNTEERS en una gorra o prenda.</p>
-              <p>3. Utilizar medio de transporte alternativo.</p>
-              <p>4. Plantar un arbol nativo.</p>
-              <p>5. Fruta comida, semilla sembrada.</p>
-              <p>6. Hidratar y abonar tu arbol.</p>
-              <p>7. Apagar el celular durante un dia.</p>
-              <p>8. Realizar actividad fisica en grupo.</p>
-              <p>9. Organizar un evento sin usar desechables.</p>
+              <p><span className="number-activity">1.</span>  Plantar mínimo un árbol nativo, describiendo sus características, coordenadas y fotografías del lugar.</p>
+              <p><span className="number-activity">2.</span> Construir una técnica para hidratar los árboles plantados, realice una descripción del paso a paso y tome fotografías del procedimiento.</p>
+              <p><span className="number-activity">3.</span>Elaborar abonos orgánicos como compostaje o humus para aplicar en los árboles plantados y describir la técnica usada mediante fotografías.</p>
+              <p><span className="number-activity">4.</span> Utilizar medio de transporte alternativo durante una semana, subir imagen de cada día, describiendo su experiencia en bicicleta, patines entre otros.</p>
+              <p><span className="number-activity">5.</span> Identifique una norma legal ambiental, tome una fotografía y realice un ensayo en la descripción.</p>
+              <p><span className="number-activity">6.</span> Fruta comida, semilla sembrada, construya un semillero con mínimo (3) frutas diferentes, fotografié y describa las características de cada una.</p>
+              <p><span className="number-activity">7.</span> Identifique y fotografié un impacto ambiental negativo en su hábitat y formule una solución en la descripción.</p>
+              <p><span className="number-activity">8.</span> Realizar actividad física en grupo, fotografié y describa su experiencia junto con el tipo de deporte utilizado, describa a sus acompañantes.</p>
+              <p><span className="number-activity">9.</span> Organice un compa sin usar desechables e invite a familiares y amigos, describa las alternativas que utilizo y comparta fotografías con los invitados.</p>
             </div>
             <div className="imgs">
               <div className="card-img up">
@@ -64,6 +64,9 @@ const Account = () => {
               </div>
             </div>
           </div>
+          <div className="mark-bottom">
+            <p>VOLUNTEERS</p>
+          </div>
         </article>
         <article className="activity">
           <div className="activity-head">
@@ -72,15 +75,15 @@ const Account = () => {
           <div className="card-content">
 
             <div className="activity-text">
-              <p>10. Realizar caminata ecologica</p>
-              <p>11. Limpiar un espacio rural o urbano.</p>
-              <p>12. Investigar y practicar meditacion.</p>
-              <p>13. Observar un ave e intentar identificarla.</p>
-              <p>14. Por el planeta apagar las luces del hogar por una hora.</p>
-              <p>15. No consumir bebidas azucaradas en un dia.</p>
-              <p>16. Usar alternativas organicas en los productos de aseo.</p>
-              <p>17. No comer carne, pollo, pescado o embutidos en un dia.</p>
-              <p>18. Mejorar la condicion de otro ser vivo.</p>
+              <p><span className="number-activity">10.</span> Organice una caminata ecológica e invite a familiares y amigos, realice una observación del lugar y registre los mejores momentos.</p>
+              <p><span className="number-activity">11.</span> Con apoyo de la comunidad, limpie un lugar invadido por basuras, realice registro fotográfico del antes y el después, describa los residuos recuperados dándoles una disposición final adecuada.</p>
+              <p><span className="number-activity">12.</span> Realice investigación sobre la meditación y sus beneficios, ubique un lugar y póngalo en práctica, preferiblemente en la naturaleza.</p>
+              <p><span className="number-activity">13.</span> Fotografiar un ave, identificarla mediante la aplicación “Merlin Bird ID” e investigar su importancia ecológica.</p>
+              <p><span className="number-activity">14.</span> Por el planeta apagar todas las luces del hogar y desconectar todos los electrodomésticos una hora durante una semana. Evidenciando el proceso diario mediante fotografías.</p>
+              <p><span className="number-activity">15.</span> Evitar consumir bebidas azucaradas embotelladas y procesadas durante una semana. Haga un estimado de cuantos litros evitó consumir y cuantifique y escriba la cantidad de azúcar evitado.</p>
+              <p><span className="number-activity">16.</span> Implemente alternativas orgánicas en los productos de aseo personal y del hogar en general, para reducir el uso de productos derivados del petróleo, investigue en su localidad.</p>
+              <p><span className="number-activity">17.</span> Evitar consumir carne, pollo, pescado o embutidos por una semana. Describa y registre con fotos el menú alternativo diario.</p>
+              <p><span className="number-activity">18.</span> Determine cómo su cultura local puede ayudar a la preservación del ambiente por medio de  técnicas, costumbres y tradiciones.</p>
             </div>
             <div className="imgs2">
               <div className="card-img f1">
@@ -104,6 +107,9 @@ const Account = () => {
               </div>
             </div>
           </div>
+          <div className="mark-bottom">
+            <p>VOLUNTEERS</p>
+          </div>
         </article>
         <article className="activity">
           <div className="activity-head">
@@ -112,15 +118,15 @@ const Account = () => {
           <div className="card-content">
 
             <div className="activity-text">
-              <p>19. Por la seguridad alimentaria, inicia un herto organico.</p>
-              <p>20. Idear metodo para reducir consumo de agua en el hogar.</p>
-              <p>21. Construir un articulo con material reciclado.</p>
-              <p>22. Investigar la importancia de las abejas.</p>
-              <p>23. Investigar una norma ambiental de su interes.</p>
-              <p>24. Realizar investigacion exhaustiva sobre cambio climatico.</p>
-              <p>25. Fotografia un paisaje y describe sus servicios ecosistemicos.</p>
-              <p>26. Investigar sobre la procrastinacion y ponerla en practica.</p>
-              <p>27. Comentar nueve (9) actividades de otros Volunteers.</p>
+              <p><span className="number-activity">19.</span> Por la seguridad alimentaria, inicia un huerto orgánico casero, recuperando semillas y esquejes de plantas usadas en la cocina como cebolla, ajo, tomate, pimentón, entre otros. Describa el proceso y registre mediante fotografías.</p>
+              <p><span className="number-activity">20.</span> Idear método para reducir consumo de agua en el hogar. Determine el ahorro mensual, llenando la matriz anexada. Registre todo el proceso mediante fotografías.</p>
+              <p><span className="number-activity">21.</span> Construir un artículo funcional y estético con materiales reciclados. Describa y registre todo el proceso con fotografías.</p>
+              <p><span className="number-activity">22.</span> Investigue exhaustivamente la importancia de las abejas y polinizadores nativos. Escriba y socialice su opinión respecto a la conservación en una comunidad, registre su socialización.</p>
+              <p><span className="number-activity">23.</span> Analizar e investigar sobre el derecho de petición según la Ley 1755 de 2015, realice un resumen de lo aprendido en la descripción.</p>
+              <p><span className="number-activity">24.</span> Realizar investigación exhaustiva sobre cambio climático. Analice sus alcances y plantee estrategias para la adaptación.</p>
+              <p><span className="number-activity">25.</span> Fotografiar un paisaje natural y describir sus servicios Ecosistemicos mediante un análisis de los beneficios que provee a la comunidad.</p>
+              <p><span className="number-activity">26.</span> Investigar ampliamente acerca de la procrastinación y determine estrategias para evitarla con un ejemplo propio, registre su experiencia.</p>
+              <p><span className="number-activity">27.</span> Proponer un plan para la reducción de impactos ambientales para su cuenca hidrográfica, teniendo en cuenta las necesidades de la comunidad y la protección de los recursos naturales. registre su experiencia.</p>
 
             </div>
             <div className="imgs3">
@@ -144,6 +150,9 @@ const Account = () => {
                 <Hexagon className="hexagono" />
               </div>
             </div>
+          </div>
+          <div className="mark-bottom">
+            <p>VOLUNTEERS</p>
           </div>
         </article>
         <div className="pdf">
