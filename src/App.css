@@ -21,6 +21,7 @@ header img{
 a{
   text-decoration: none;
   color: var(--color1);
+
 }
 ul{
   position: relative;
@@ -29,6 +30,7 @@ ul{
   font-weight: bold;
   display: flex;
   flex-wrap: wrap;
+  border-radius: 8px;
 }
 ul li{
   list-style: none;
@@ -42,12 +44,18 @@ ul li{
   border: 1px solid var(--color1);
   border-radius: 8px;
 }
+.primary-bottom:hover{
+  background-color: var(--color1);
+  color: var(--color2);
+  border: 1px solid var(--color2);
+}
 .open-submenu{
   position: relative;
 }
 .submenu{
   display: none;
   position: absolute;
+  background-color: blue;
   right: 0;
   top: 26px;
   z-index: 2;
@@ -68,5 +76,8 @@ ul li{
   }
   header img{
     height: 80px;
+  }
+  .submenu{
+    top: 32px;
   }
 }

@@ -1,4 +1,4 @@
-:root{
+:root {
     --color1: #aff02e;
     --color2: #343033;
     --color3: #12b318;
@@ -6,30 +6,44 @@
     --color5: #b3b3b1;
     --color6: #0e1215;
 }
-.body{
+
+.body {
     background-color: var(--color6);
     height: calc(100vh - 68px);
 }
-.main{
+
+.main {
     background-color: var(--color6);
     color: white;
 }
-.section-login{
+
+.section-login {
     max-width: 560px;
     margin: 0 auto;
 }
-.logopage{
+
+.logopage {
     width: 100%;
 }
-.logopage img{
+
+.logopage img {
     width: 100%;
 }
-.form h2{
+.form{
+    overflow: hidden;
+}
+.form h2 {
     text-align: center;
     font-size: 16px;
     margin-bottom: 8px;
 }
-.input-label{
+
+.form h2:nth-child(2) {
+    margin-bottom: 36px;
+
+}
+
+.input-label {
     display: flex;
     flex-direction: column;
     width: 180px;
@@ -37,7 +51,8 @@
     margin: 0 auto;
     margin-bottom: 24px;
 }
-.img-icon-user{
+
+.img-icon-user {
     background-color: white;
     width: 36px;
     height: 36px;
@@ -49,36 +64,51 @@
     position: absolute;
     top: -4px;
     left: -16px;
-
 }
-.icono{
+
+.icono {
     color: black;
     margin: 0;
 }
-.input-label .icono{
+
+.input-label .icono {
     position: absolute;
 }
-.input-label label{
+
+.label-login {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     color: var(--color1);
-    height: 32px;
-    text-align: center;
     font-weight: bold;
-    display: flex;
-    align-items: center;
+    line-height: 30px;
+    pointer-events: none;
 }
-.input-label input{
+
+.input-login {
     background-color: var(--color2);
     height: 32px;
     text-align: center;
     border-radius: 20px;
     border: 0;
+    color: white;
 }
 
-.img-icon-password{
+.input-login:focus {
+    outline: none;
+    border-bottom: 2px solid #8BC34A;
+}
+
+.input-login:focus + .label-login,
+.input-login:valid + .label-login {
+    top: -16px;
+    font-size: 12px;
+    transition: .6s;
+}
+
+
+.img-icon-password {
     background-color: white;
     width: 36px;
     height: 36px;
@@ -91,12 +121,14 @@
     top: -4px;
     right: -16px;
 }
-.buttons{
+
+.buttons {
     width: 180px;
     margin: 0 auto;
     position: relative;
 }
-.buttons button{
+
+.buttons button {
     height: 32px;
     width: 100%;
     border-radius: 20px;
@@ -106,32 +138,38 @@
     font-weight: bold;
     margin-bottom: 12px;
 }
-.button-enter{
+
+.button-enter {
     color: #08390a;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.icon-enter{
+
+.icon-enter {
     font-size: 20px;
     position: absolute;
     top: 6px;
     right: 4px;
 }
-.button-signin{
+
+.button-signin {
     background-color: var(--color1);
 
 }
-.button-signin a{
+
+.button-signin a {
     color: #08390a;
 }
+
 @media(min-width: 422px) {
-    body{
+    body {
         min-height: calc(100vh - 60px);
-    } 
+    }
 }
+
 @media(min-width: 1024px) {
-    body{
+    body {
         min-height: calc(100vh - 80px);
-    } 
+    }
 }

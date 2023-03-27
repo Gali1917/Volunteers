@@ -18,8 +18,8 @@ const SignUp = () => {
                                 <div className="img-icon">
                                     <img className="icono" src="https://i.postimg.cc/90Z7VdBJ/pngegg.png" alt="" />
                                 </div>
-                                <label htmlFor="name">Nombre</label>
-                                <input className="cred" type="text" id="name" />
+                                <input className="input-signup" type="text" id="name" required />
+                                <label className="label-signup" htmlFor="name">Nombre</label>
 
                             </div>
                             <div className="input-label-signup">
@@ -27,61 +27,61 @@ const SignUp = () => {
                                     <img className="icono" src="https://i.postimg.cc/fL6962YV/correo.png" alt="" />
                                     <img src="" alt="" />
                                 </div>
-                                <label htmlFor="email">Correo electronico</label>
-                                <input className="cred" type="email" id="email" />
+                                <input className="input-signup" type="email" id="email" required />
+                                <label className="label-signup" htmlFor="email">Correo electronico</label>
 
                             </div><div className="input-label-signup">
                                 <div className="img-icon">
                                     <img className="icono" src="https://i.postimg.cc/4dKc2kHC/TELEFONO.png" alt="" />
                                     <img src="" alt="" />
                                 </div>
-                                <label htmlFor="phone">Numero de telefono</label>                
-                                <input className="cred" type="number" id="phone" />
+                                <input className="input-signup" type="number" id="phone" required />
+                                <label className="label-signup" htmlFor="phone">Numero de telefono</label>
 
                             </div><div className="input-label-signup">
                                 <div className="img-icon">
                                     <img className="icono" src="https://i.postimg.cc/g028R6Y2/identity-verification-icon-copia.png" alt="" />
                                     <img src="" alt="" />
                                 </div>
-                                <label htmlFor="document">Numero de documento</label>
-                                <input className="cred" type="number" id="document" />
+                                <input className="input-signup" type="number" id="document" required />
+                                <label className="label-signup" htmlFor="document">Numero de documento</label>
 
                             </div><div className="input-label-signup">
                                 <div className="img-icon">
                                     <img className="icono" src="https://i.postimg.cc/2SwnVxNt/CONTRASE-A.png" alt="" />
                                     <img src="" alt="" />
                                 </div>
-                                <label htmlFor="password">Contraseña</label>
-                                <input className="cred" type="password" id="password" />
+                                <input className="input-signup" type="password" id="password" required />
+                                <label className="label-signup" htmlFor="password">Contraseña</label>
 
                             </div><div className="input-label-signup">
                                 <div className="img-icon">
                                     <img className="icono" src="https://i.postimg.cc/tgvPzCTt/REPETIR-CONTRASE-A.png" alt="" />
                                     <img src="" alt="" />
                                 </div>
-                                <label htmlFor="repeat-password">Repetir Contraseña</label>
-                                <input className="cred" type="password" id="repeat-password" />
+                                <input className="input-signup" type="password" id="repeat-password" required />
+                                <label className="label-signup" htmlFor="repeat-password">Repetir Contraseña</label>
 
                             </div><div className="input-label-signup">
                                 <div className="img-icon">
                                     <img className="icono" src="https://i.postimg.cc/BQfFpzqy/Pngtree-men-s-work-bag-icon-4635496.png" alt="" />
                                     <img src="" alt="" />
                                 </div>
-                                <label htmlFor="ocupation">Ocupacion</label>
-                                <input className="cred" type="text" id="ocupation" />
+                                <input className="input-signup" type="text" id="ocupation" required />
+                                <label className="label-signup" htmlFor="ocupation">Ocupacion</label>
 
                             </div><div className="input-label-signup">
-                                <label htmlFor="country">Pais de origen</label>
-                                <input className="cred" type="text" id="country" />
+                                <input className="input-signup" type="text" id="country" required />
+                                <label className="label-signup" htmlFor="country">Pais de origen</label>
                                 <div className="img-icon world">
                                     <img className="icono" src="https://i.postimg.cc/gcZRvpP8/mundo.png" alt="" />
                                 </div>
                             </div>
-                            <button className="button-enter-signup">
-                                <Link to="/account" className="">
+                            <Link to="/account" className="button-sign">
+                                <button className="button-enter-signup">
                                     SUMATE A LA ACCION
-                                </Link>
-                            </button>
+                                </button>
+                            </Link>
                             <Link to="/conditions" className="terminosycondiciones">
                                 Terminos & Condiciones
                             </Link>

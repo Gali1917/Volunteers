@@ -61,26 +61,37 @@
     position: absolute;
     width: 100%;
 }
-.input-label-signup label{
+.label-signup{
     position: absolute;
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
     color: black;
-    height: 32px;
-    text-align: center;
+    height: 100%;
     font-weight: bold;
     font-size: 14px;
     display: flex;
     align-items: center;
     white-space: nowrap;
 }
-.input-label-signup input{
+.input-signup{
     background-color: white;
     height: 32px;
     text-align: center;
     border-radius: 20px;
     border: 0;
+}
+.input-signup:focus {
+    outline: none;
+    border-bottom: 2px solid #8BC34A;
+}
+
+.input-signup:focus + .label-signup,
+.input-signup:valid + .label-signup {
+    transform: translateX(120px);
+    font-size: 12px;
+    transition: .6s;
+    color: white;
 }
 
 .button-enter-signup{
@@ -95,9 +106,13 @@
     align-items: center;
     justify-content: center;
     background-color: var(--color1);
-}
-.button-enter-signup a{
     color: white;
+    cursor: pointer;
+
+}
+.button-enter-signup:hover{
+    background-color: white;
+    color: var(--color1);
 }
 .terminosycondiciones{
     display: block;

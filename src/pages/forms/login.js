@@ -23,12 +23,12 @@ const Login = () => {
                                 <div className="img-icon-user">
                                     <FontAwesomeIcon className="icono" icon={faUserCheck} />
                                 </div>
-                                <label htmlFor="usuario">Usuario</label>
-                                <input className="cred" type="text" id="usuario" />
+                                <input className="input-login" type="text" id="usuario" required/>
+                                <label className="label-login" htmlFor="usuario">Usuario</label>
                             </div>
                             <div className="input-label">
-                                <label htmlFor="password">Contraseña</label>
-                                <input type="password" id="password"/>
+                                <input className="input-login" type="password" id="password" required/>
+                                <label className="label-login" htmlFor="password">Contraseña</label>
                                 <div className="img-icon-password">
                                     <FontAwesomeIcon className="icono" icon={faUnlockKeyhole} />
                                 </div>
