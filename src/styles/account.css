@@ -132,6 +132,7 @@
 }
 .hexagono{
     width: 48px;
+    cursor: pointer;
 }
 .up{
     position: absolute;
@@ -235,6 +236,72 @@
     text-decoration: none;
     padding-left: 24px;
     padding-right: 24px; 
+}
+
+.imgspng{
+    position: relative;
+    margin: 0 auto;
+    width: 260px;
+
+}
+.card-imgpng{
+    position: absolute;
+}
+.hexagon-1,
+.hexagon-2,
+.hexagon-3,
+.hexagon-4,
+.hexagon-5,
+.hexagon-6,
+.hexagon-7,
+.hexagon-8,
+.hexagon-9{
+    z-index: 2;
+
+}
+.uppng{
+    left: 76px;
+}
+.centerpng{
+    top: 42px;
+}
+.botpng{
+    top: 84px;
+    left: 24px;
+}
+.botpng img:nth-child(2){
+    position: absolute;
+    left: 150px;
+}
+.card-imgpng img{
+    width: 50px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.card-imgpng p{
+    display: inline;
+    margin-right: 22.5px;
+    text-align: center;
+    color: var(--color1);
+    text-shadow: 0 0 4px black;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.number-9{
+    left: 150px;
+    min-width: 8px;
+    position: absolute;
+}
+.image img{
+    margin-top: 4px;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: -1;
 }
 @media(min-width: 1024px){
     body,
