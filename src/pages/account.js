@@ -4,9 +4,20 @@ import "../styles/account.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCameraRetro } from "@fortawesome/free-solid-svg-icons";
 import Hexagon from "react-hexagon";
+import { useTareas } from "../context/tareasContext";
 
 const Account = () => {
 
+  const {tareas} = useTareas();
+
+  if(tareas.length === 0) return(
+    <div>
+      <h1>
+        No hay fotografias aun
+      </h1>
+    </div>
+  )
+  
   return (
     <main>
       <section className="head-perfil">
@@ -36,6 +47,11 @@ const Account = () => {
           <div className="card-content">
 
             <div className="activity-text">
+              {tareas.map(tarea =>(
+                <div key={tarea._id}>
+                  {tarea.description}
+                </div>
+              ))}
               <p><span className="number-activity">1.</span>  Plantar mínimo un árbol nativo, describiendo sus características, coordenadas y fotografías del lugar.</p>
               <p><span className="number-activity">2.</span> Construir una técnica para hidratar los árboles plantados, realice una descripción del paso a paso y tome fotografías del procedimiento.</p>
               <p><span className="number-activity">3.</span>Elaborar abonos orgánicos como compostaje o humus para aplicar en los árboles plantados y describir la técnica usada mediante fotografías.</p>

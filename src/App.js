@@ -6,6 +6,7 @@ import Content from './pages/content/content';
 import Login from './pages/forms/login';
 import SignUp from './pages/forms/signUp';
 import Conditions from './pages/conditions';
+import { TareasProvider } from './context/tareasContext';
 
 function App() {
   return (
@@ -17,7 +18,6 @@ function App() {
             <Link to={"/"}>
               <li className='primary-bottom'>
                 INICIO
-
               </li>
             </Link>
             <Link to={"/content"}>
@@ -37,15 +37,19 @@ function App() {
         </nav>
       </header>
       <main>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/content" element={<Content />} />
-          <Route path="/account" element={<Account />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/conditions" element={<Conditions />} />
+        <TareasProvider>
 
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/content" element={<Content />} />
+            <Route path="/account" element={<Account />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/conditions" element={<Conditions />} />
+            <Route path="*" element={<Index />} />
+
+          </Routes>
+        </TareasProvider>
       </main>
     </div>
   );
