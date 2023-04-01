@@ -58,17 +58,23 @@
     border-radius: 8px;
     margin: 0;
 }
-
+.second-buttom svg{
+    color: white;
+    margin: 0 4px;
+}
 .icono {
     color: #12b318;
     margin-right: 4px;
 }
+.buttom{
+    width: 90vw;
+}
 
 .nav-bar-img {
     margin: 0 auto;
-    width: 80vw;
+    width: 100%;
     min-width: 288px;
-
+    color: white;
 }
 
 .nav-bar-img ul {

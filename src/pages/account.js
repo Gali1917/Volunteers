@@ -8,16 +8,16 @@ import { useTareas } from "../context/tareasContext";
 
 const Account = () => {
 
-  const {tareas} = useTareas();
+  const { tareas } = useTareas();
 
-  if(tareas.length === 0) return(
+  if (tareas.length === 0) return (
     <div>
       <h1>
         No hay fotografias aun
       </h1>
     </div>
   )
-  
+
   return (
     <main>
       <section className="head-perfil">
@@ -28,17 +28,7 @@ const Account = () => {
           <img src="https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Foto de perfil" />
         </div>
       </section>
-      <section className="nav-bar-img">
-        <ul>
-          <li className="second-buttom">
-            SELECCIONAR FOTO
-          </li>
-          <li className="second-buttom">
-            <FontAwesomeIcon className="icono" icon={faCameraRetro} />
-            SUBIR
-          </li>
-        </ul>
-      </section>
+      
       <section className="cards">
         <article className="activity">
           <div className="activity-head">
@@ -47,14 +37,14 @@ const Account = () => {
           <div className="card-content">
 
             <div className="activity-text">
-              {tareas.map(tarea =>(
+              {tareas.map(tarea => (
                 <div key={tarea._id}>
                   {tarea.description}
                 </div>
               ))}
               <p><span className="number-activity">1.</span>  Plantar mínimo un árbol nativo, describiendo sus características, coordenadas y fotografías del lugar.</p>
               <p><span className="number-activity">2.</span> Construir una técnica para hidratar los árboles plantados, realice una descripción del paso a paso y tome fotografías del procedimiento.</p>
-              <p><span className="number-activity">3.</span>Elaborar abonos orgánicos como compostaje o humus para aplicar en los árboles plantados y describir la técnica usada mediante fotografías.</p>
+              <p><span className="number-activity">3.</span> Elaborar abonos orgánicos como compostaje o humus para aplicar en los árboles plantados y describir la técnica usada mediante fotografías.</p>
               <p><span className="number-activity">4.</span> Utilizar medio de transporte alternativo durante una semana, subir imagen de cada día, describiendo su experiencia en bicicleta, patines entre otros.</p>
               <p><span className="number-activity">5.</span> Identifique una norma legal ambiental, tome una fotografía y realice un ensayo en la descripción.</p>
               <p><span className="number-activity">6.</span> Fruta comida, semilla sembrada, construya un semillero con mínimo (3) frutas diferentes, fotografié y describa las características de cada una.</p>
@@ -79,7 +69,10 @@ const Account = () => {
                 <img src="https://images.pexels.com/photos/129574/pexels-photo-129574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
               </div>
               <div className="card-imgpng uppng">
-                <img className="hexagon-1" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
+                <Link to='/details/:id'>
+                  <img className="hexagon-1" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
+                </Link>
+
                 <img className="hexagon-2" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
               </div>
               <div className="card-imgpng centerpng">

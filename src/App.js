@@ -7,6 +7,7 @@ import Login from './pages/forms/login';
 import SignUp from './pages/forms/signUp';
 import Conditions from './pages/conditions';
 import { TareasProvider } from './context/tareasContext';
+import Details from './pages/content/details';
 
 function App() {
   return (
@@ -47,7 +48,7 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/conditions" element={<Conditions />} />
             <Route path="*" element={<Index />} />
-
+            <Route path="/details/:id" element={<Details />} />
           </Routes>
         </TareasProvider>
       </main>

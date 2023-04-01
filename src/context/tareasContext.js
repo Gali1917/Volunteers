@@ -1,5 +1,6 @@
 import { useState, createContext, useContext, useEffect } from "react";
 import { getTareasRequests } from "../api/tareas";
+import { getTareasDetails } from "../api/tareas";
 
 const tareasContext = createContext();
 
@@ -14,8 +15,13 @@ export const TareasProvider = ({ children }) => {
         const res = await getTareasRequests();
         setTareas(res.data);
     }
+    const getTarea = async () =>{
+        const res = await getTareasDetails();
+        setTareas(res.data);
+    }
     useEffect(() =>{
         getTareas();
+        getTarea();
       }, [])
     console.log(tareas);
 

@@ -137,6 +137,7 @@
     line-height: 32px;
     font-weight: bold;
     margin-bottom: 12px;
+    cursor: pointer;
 }
 
 .button-enter {
@@ -144,6 +145,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .icon-enter {
@@ -155,7 +157,7 @@
 
 .button-signin {
     background-color: var(--color1);
-
+    cursor: pointer;
 }
 
 .button-signin a {
