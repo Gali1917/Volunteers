@@ -37,11 +37,11 @@ const Account = () => {
           <div className="card-content">
 
             <div className="activity-text">
-              {tareas.map(tarea => (
+              {/* {tareas.map(tarea => (
                 <div key={tarea._id}>
                   {tarea.description}
                 </div>
-              ))}
+              ))} */}
               <p><span className="number-activity">1.</span>  Plantar mínimo un árbol nativo, describiendo sus características, coordenadas y fotografías del lugar.</p>
               <p><span className="number-activity">2.</span> Construir una técnica para hidratar los árboles plantados, realice una descripción del paso a paso y tome fotografías del procedimiento.</p>
               <p><span className="number-activity">3.</span> Elaborar abonos orgánicos como compostaje o humus para aplicar en los árboles plantados y describir la técnica usada mediante fotografías.</p>
@@ -69,7 +69,7 @@ const Account = () => {
                 <img src="https://images.pexels.com/photos/129574/pexels-photo-129574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
               </div>
               <div className="card-imgpng uppng">
-                <Link to='/details/:id'>
+                <Link to='/details/'>
                   <img className="hexagon-1" src="https://i.postimg.cc/Rhn10HFx/hexagon150.png" alt="" />
                 </Link>
 

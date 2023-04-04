@@ -57,6 +57,7 @@
     font-size: 14px;
     border-radius: 8px;
     margin: 0;
+    cursor: pointer;
 }
 .second-buttom svg{
     color: white;

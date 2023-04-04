@@ -1,5 +1,6 @@
 import './App.css';
 import { Routes, Route, Link } from "react-router-dom";
+import { Toaster } from 'react-hot-toast';
 import Account from './pages/account';
 import Index from './pages';
 import Content from './pages/content/content';
@@ -48,8 +49,9 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/conditions" element={<Conditions />} />
             <Route path="*" element={<Index />} />
-            <Route path="/details/:id" element={<Details />} />
+            <Route path="/details" element={<Details />} />
           </Routes>
+          <Toaster />
         </TareasProvider>
       </main>
     </div>

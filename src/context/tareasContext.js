@@ -1,6 +1,5 @@
 import { useState, createContext, useContext, useEffect } from "react";
-import { getTareasRequests } from "../api/tareas";
-import { getTareasDetails } from "../api/tareas";
+import { getTareasRequests, postTareasRequests } from "../api/tareas";
 
 const tareasContext = createContext();
 
@@ -11,24 +10,29 @@ export const useTareas = () =>{
 
 export const TareasProvider = ({ children }) => {
     const [tareas, setTareas] = useState([]);
+
     const getTareas = async () =>{
         const res = await getTareasRequests();
         setTareas(res.data);
     }
-    const getTarea = async () =>{
-        const res = await getTareasDetails();
-        setTareas(res.data);
+    const postTarea = async (tarea) =>{
+        const res = await postTareasRequests(tarea);
+        setTareas([...tareas, res.data]);
+    }
+    const deleteTarea = id =>{
+        console.log(id);
     }
     useEffect(() =>{
         getTareas();
-        getTarea();
       }, [])
     console.log(tareas);
 
     return (
         <tareasContext.Provider value={{
             tareas,
-            getTareas
+            getTareas,
+            postTarea,
+            deleteTarea
         }}>
             {children}
         </tareasContext.Provider>)
