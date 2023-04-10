@@ -21,14 +21,14 @@ const Details = () => {
         <h1>No hay fotografias aun</h1>
       </div>
     );
-  const handleDelete = (_id) => {
+  const handleDelete = (id) => {
     toast((t) => (
       <div>
         <p>Deseas eliminar la tarea?</p>
-        <p>{_id}</p>
+        {console.log(id)}
         <div>
           <button className="second-buttom"
-          onClick={() => deleteTarea(_id)}>Borrar</button>
+          onClick={() => deleteTarea(id)}>Borrar</button>
           <button
             className="second-buttom"
             onClick={() => {
@@ -91,43 +91,44 @@ const Details = () => {
       </article>
       <article className="activity">
         <div>{/* {tareas[0].title} */}</div>
-        {tareas.map((tarea) => (
-          <div key={tarea._id}>
+          {tareas.map((tarea) => (
+            <div key={tarea._id}>
             <h1 className="activity-head">{tarea.title}</h1>
             <div className="description">
-              {/* <img className="activity-img" src={tarea.image.url} alt="Imagen" /> */}
-              <div className="description-text"></div>
-              <p>{tarea.description}</p>
-              <article className="buttom">
-                <section className="nav-bar-img">
-                  <ul>
-                    <li className="second-buttom">SELECCIONAR ARCHIVO</li>
-                    <li className="second-buttom">
-                      <FontAwesomeIcon className="icono" icon={faFile} />
-                      SUBIR
-                    </li>
-                  </ul>
-                </section>
-              </article>
-              <article className="buttom">
-                <section className="nav-bar-img">
-                  <ul>
-                    <li
+            {/* <img className="activity-img" src={tarea.image.url} alt="Imagen" /> */}
+            <div className="description-text"></div>
+            <p>{tarea.description}</p>
+            <article className="buttom">
+            <section className="nav-bar-img">
+            <ul>
+            <li className="second-buttom">SELECCIONAR ARCHIVO</li>
+            <li className="second-buttom">
+            <FontAwesomeIcon className="icono" icon={faFile} />
+            SUBIR
+            </li>
+            </ul>
+            </section>
+            </article>
+            <article className="buttom">
+            <section className="nav-bar-img">
+            <ul>
+            <li
                       className="second-buttom"
                       onClick={() => handleDelete(tareas._id)}
-                    >
+                      >
                       <FontAwesomeIcon className="icono" icon={faFile} />
                       BORRAR
-                    </li>
-                  </ul>
-                </section>
-              </article>
-            </div>
-          </div>
-        ))}
-      </article>
-    </section>
-  );
-};
-
-export default Details;
+                      </li>
+                      </ul>
+                      </section>
+                      </article>
+                      </div>
+                      </div>
+                      ))}
+                      </article>
+                      </section>
+                      );
+                    };
+                    
+                    export default Details;
+                    

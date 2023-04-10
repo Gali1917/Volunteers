@@ -7,7 +7,10 @@ const Index = () => {
         <main>
             <div className="frontpage">
                 <h1>VOLUNTEERS</h1>
-                <img src="https://i.postimg.cc/FKKbw1V7/background-home-volunteers.jpg" alt="Portada de inicio" />
+                <Link className="background-video" to="https://www.youtube.com/watch?v=qMR5NU0lGOc&ab_channel=JrBroncellEspinelPorras" target="_blank">
+                    <video  src="https://res.cloudinary.com/dd8a6qc45/video/upload/v1681150218/background-video_keyumk.mp4" autoPlay muted preload="auto"></video>
+                    
+                </Link>
             </div>
             <section>
                 <h1 className="welcome">BIENVENIDOS!</h1>
