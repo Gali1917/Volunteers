@@ -1,14 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/account.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCameraRetro } from "@fortawesome/free-solid-svg-icons";
 import Hexagon from "react-hexagon";
 import { useTareas } from "../context/tareasContext";
 
 const Account = () => {
   const { tareas } = useTareas();
-
   if (tareas.length === 0)
     return (
       <div>
@@ -137,7 +134,7 @@ const Account = () => {
                 />
               </div>
               <div className="card-imgpng uppng-n1">
-                <Link to="/details/">
+                <Link to={`/details/${tareas[3]._id}`}>
                   <img
                     className="hexagon-1"
                     src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
@@ -145,50 +142,72 @@ const Account = () => {
                   />
                 </Link>
 
-                <img
-                  className="hexagon-2"
-                  src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
-                  alt=""
-                />
+                <Link to={`/details/${tareas[5]._id}`}>
+                  <img
+                    className="hexagon-2"
+                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
+                    alt=""
+                  />
+                </Link>
               </div>
+
               <div className="card-imgpng centerpng-n1">
-                <img
-                  className="hexagon-3"
-                  src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
-                  alt=""
-                />
-                <img
-                  className="hexagon-4"
-                  src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
-                  alt=""
-                />
-                <img
-                  className="hexagon-5"
-                  src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
-                  alt=""
-                />
-                <img
-                  className="hexagon-6"
-                  src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
-                  alt=""
-                />
-                <img
-                  className="hexagon-7"
-                  src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
-                  alt=""
-                />
+                <Link to={`/details/${tareas[0]._id}`}>
+                  <img
+                    className="hexagon-3"
+                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
+                    alt=""
+                  />
+                </Link>
+
+                <Link to={`/details/${tareas[2]._id}`}>
+                  <img
+                    className="hexagon-4"
+                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
+                    alt=""
+                  />
+                </Link>
+
+                <Link to={`/details/${tareas[4]._id}`}>
+                  <img
+                    className="hexagon-5"
+                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
+                    alt=""
+                  />
+                </Link>
+
+                <Link to={`/details/${tareas[6]._id}`}>
+                  <img
+                    className="hexagon-6"
+                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
+                    alt=""
+                  />
+                </Link>
+
+                <Link to={`/details/${tareas[8]._id}`}>
+                  <img
+                    className="hexagon-7"
+                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
+                    alt=""
+                  />
+                </Link>
               </div>
               <div className="card-imgpng botpng-n1">
-                <img
-                  className="hexagon-8"
-                  src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
-                  alt=""
-                />
-                <img
-                  className="hexagon-9"
-                  src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
-                  alt=""
-                />
+                <Link to={`/details/${tareas[1]._id}`}>
+                  <img
+                    className="hexagon-8"
+                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
+                    alt=""
+                  />
+                </Link>
+
+                <Link to={`/details/${tareas[7]._id}`}>
+                  <img
+                    className="hexagon-9"
+                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
+                    alt=""
+                  />
+                </Link>
               </div>
             </div>
           </div>
@@ -259,12 +278,12 @@ const Account = () => {
                 alt=""
               />
               <img
-              className="activity-img"
+                className="activity-img"
                 src="https://images.pexels.com/photos/2265247/pexels-photo-2265247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt=""
               />
               <img
-              className="activity-img"
+                className="activity-img"
                 src="https://images.pexels.com/photos/14218611/pexels-photo-14218611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt=""
               />
@@ -281,7 +300,6 @@ const Account = () => {
             </div>
 
             <div className="card-imgpng-n2 centerpng2-n2 image-n2">
-
               <img
                 src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt=""
@@ -298,7 +316,6 @@ const Account = () => {
               />
             </div>
             <div className="card-imgpng-n2 botpng-n2 image-n2">
-
               <img
                 src="https://images.pexels.com/photos/129574/pexels-photo-129574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt=""

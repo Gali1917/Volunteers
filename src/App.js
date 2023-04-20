@@ -49,7 +49,7 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/conditions" element={<Conditions />} />
             <Route path="*" element={<Index />} />
-            <Route path="/details" element={<Details />} />
+            <Route path="/details/:id" element={<Details />} />
           </Routes>
           <Toaster />
         </TareasProvider>
