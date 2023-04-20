@@ -93,43 +93,43 @@ const Account = () => {
             <div className="activity-images-n1">
               <div className="card-imgpng uppng-n1 image-n1">
                 <img
-                  src="https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src={tareas[3].image.url}
                   alt=""
                 />
                 <img
-                  src="https://images.pexels.com/photos/2265247/pexels-photo-2265247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src={tareas[5].image.url}
                   alt=""
                 />
               </div>
               <div className="card-imgpng centerpng-n1 image-n1">
                 <img
-                  src="https://images.pexels.com/photos/14218611/pexels-photo-14218611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src={tareas[1].image.url}
                   alt=""
                 />
                 <img
-                  src="https://images.pexels.com/photos/14197381/pexels-photo-14197381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src={tareas[2].image.url}
                   alt=""
                 />
                 <img
-                  src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src={tareas[4].image.url}
                   alt=""
                 />
                 <img
-                  src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src={tareas[6].image.url}
                   alt=""
                 />
                 <img
-                  src="https://images.pexels.com/photos/414181/pexels-photo-414181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src={tareas[8].image.url}
                   alt=""
                 />
               </div>
               <div className="card-imgpng botpng-n1 image-n1">
                 <img
-                  src="https://images.pexels.com/photos/8797307/pexels-photo-8797307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src={tareas[1].image.url}
                   alt=""
                 />
                 <img
-                  src="https://images.pexels.com/photos/129574/pexels-photo-129574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src={tareas[5].image.url}
                   alt=""
                 />
               </div>
