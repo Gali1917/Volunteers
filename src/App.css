@@ -67,6 +67,14 @@ ul li{
   display: block;
   background-color: white;
 }
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: var(--color4);
+  color: var(--color1);
+  font-size: 16px;
+}
 
 @media(min-width: 1024px){
   header{
