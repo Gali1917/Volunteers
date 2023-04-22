@@ -403,6 +403,7 @@
 
     }
     .activity-images-n1{
+        position: relative;
         width: 450px;
         height: 220px;
         display: flex;
@@ -428,6 +429,40 @@
         left: 50%;
         transform: translateX(-50%);
     }
+    .card-imgpng img {
+        width: 76px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .image-n1 img {
+        margin-top: 6px;
+        height: 76px;
+        width: 76px;
+    }
+    .centerpng-n1 {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .centerpngimg-n1{
+        margin-top: -3px;
+
+    }
+    .botpng-n1 {
+        top: 129px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .botpng-n1 img:nth-child(2){
+        position: static;
+    }
+    /* .uppng-n1 {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     .uppng-n2 {
         top: 0;
         left: 50%;
@@ -442,6 +477,9 @@
         top: 50%;
         transform: translateY(-50%);
     }
+    .centerpng-n1 img{
+        margin-top: 7px;
+    }
     .centerpng-n2 {
         top: 50%;
         transform: translateY(-50%);
@@ -452,8 +490,11 @@
     }
     .botpng-n1 {
         top: auto;
-        bottom: 0px;
-        left: 72px;
+        bottom: -7px;
+        left: 73px;
+    }
+    .botpng-n1 img{
+
     }
     .botpng-n2 {
         top: auto;
@@ -489,6 +530,7 @@
         z-index: 2;
     }
     .image-n1 img {
+        margin-top: 6px;
         height: 76px;
         width: 76px;
     }
@@ -499,5 +541,5 @@
     .image-n3 img {
         height: 76px;
         width: 76px;
-    }
+    } */
 }
