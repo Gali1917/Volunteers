@@ -143,33 +143,37 @@ const Details = () => {
           enableReinitialize={true}
         >
           {({ handleSubmit, setFieldValue, isSubmitting }) => (
-            <Form onSubmit={handleSubmit}>
-              <label htmlFor="title">Titulo</label>
-              <Field
-                className="input-login"
-                name="title"
-                placeholder="Titulo"
-              />
-              <ErrorMessage component="p" name="title" />
-              <label htmlFor="description">Descripcion</label>
+            <Form className="form" onSubmit={handleSubmit}>
+              <div className="input-label-form">
+                <label htmlFor="title">Titulo</label>
+                <Field
+                  className="input-form input-form-un"
+                  name="title"
+                  placeholder="Titulo"
+                />
+                <ErrorMessage component="p" name="title" />
+              </div>
+              <div className="input-label-form">
+                <label htmlFor="description">Descripcion</label>
 
-              <Field
-                component="textarea"
-                className="input-login"
-                name="description"
-                placeholder="Descripcion"
-                rows={5}
-              />
-              <ErrorMessage component="p" name="description" />
-              <label htmlFor="image">Imagen</label>
-              <input
-                className="second-buttom"
-                type="file"
-                onChange={(e) => setFieldValue("image", e.target.files[0])}
-              />
-
+                <Field
+                  component="textarea"
+                  className="input-form input-form-un"
+                  name="description"
+                  placeholder="Descripcion"
+                />
+                <ErrorMessage component="p" name="description" />
+              </div>
+              <div className="input-label-form">
+                <label htmlFor="image">Imagen</label>
+                <input
+                  className="second-buttom"
+                  type="file"
+                  onChange={(e) => setFieldValue("image", e.target.files[0])}
+                />
+              </div>
               <button
-                className="second-buttom"
+                className="second-buttom send"
                 type="submit"
                 disabled={isSubmitting}
               >
@@ -178,15 +182,6 @@ const Details = () => {
             </Form>
           )}
         </Formik>
-        <section className="nav-bar-img">
-          <ul>
-            <li className="second-buttom">SELECCIONAR FOTO</li>
-            <li className="second-buttom">
-              <FontAwesomeIcon className="icono" icon={faCameraRetro} />
-              SUBIR
-            </li>
-          </ul>
-        </section>
       </article>
       <article className="activity">
         <div>
@@ -194,16 +189,13 @@ const Details = () => {
           <div className="description">
             {async () => {
               const urlImgae = await tarea.image.url;
-              if(urlImgae){
-
+              if (urlImgae) {
                 <img className="activity-img" src={urlImgae} alt="Imagen" />;
               }
             }}
             <div className="description-text"></div>
             <p>{tarea.description}</p>
 
-            <article className="buttom">
-              <section className="nav-bar-img">
                 <ul>
                   <li
                     className="second-buttom"
@@ -213,8 +205,6 @@ const Details = () => {
                     BORRAR
                   </li>
                 </ul>
-              </section>
-            </article>
           </div>
         </div>
         {/* ))} */}
