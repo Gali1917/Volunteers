@@ -92,7 +92,7 @@ const Account = () => {
             </div>
             <div className="activity-images-n1">
               <div className="card-imgpng uppng-n1 image-n1">
-                <img src={tareas[3].image.url} alt="" />
+                <img src={tareas[1].image.url} alt="" />
                 <img src={tareas[5].image.url} alt="" />
               </div>
               <div className="card-imgpng centerpng-n1 centerpngimg-n1 image-n1">
@@ -104,7 +104,7 @@ const Account = () => {
               </div>
               <div className="card-imgpng botpng-n1 botpngimg-n1 image-n1">
                 <img src={tareas[1].image.url} alt="" />
-                <img src={tareas[5].image.url} alt="" />
+                <img src={tareas[8].image.url} alt="" />
               </div>
               <div className="card-imgpng uppng-n1">
                 <Link to={`/details/${tareas[3]._id}`}>
