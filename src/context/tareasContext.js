@@ -6,6 +6,7 @@ import {
   getTareaRequest,
   updateTareaRequest,
 } from "../api/tareas";
+import { sendEmailRequest } from "../api/email";
 
 const tareasContext = createContext();
 
@@ -25,6 +26,7 @@ export const TareasProvider = ({ children }) => {
     const res = await getTareaRequest(id);
     return res.data;
   };
+  
   const postTarea = async (tarea) => {
     try {
       const res = await postTareasRequest(tarea);

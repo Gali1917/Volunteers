@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { useTareas } from "../../context/tareasContext";
 import { faCameraRetro } from "@fortawesome/free-solid-svg-icons";
-import { faFile } from "@fortawesome/free-regular-svg-icons";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useParams } from "react-router-dom";
 import * as Yup from "yup";
@@ -94,33 +93,33 @@ const Details = () => {
         </article>
       </div>
     );
-  const handleDelete = (id) => {
-    toast((t) => (
-      <div>
-        <p>Deseas eliminar la tarea? {id}</p>
-        {console.log(id)}
-        <div>
-          <button
-            className="second-buttom"
-            onClick={() => {
-              deleteTarea(id);
-              toast.dismiss(t.id);
-            }}
-          >
-            Borrar
-          </button>
-          <button
-            className="second-buttom"
-            onClick={() => {
-              toast.dismiss(t.id);
-            }}
-          >
-            Cancelar
-          </button>
-        </div>
-      </div>
-    ));
-  };
+  // const handleDelete = (id) => {
+  //   toast((t) => (
+  //     <div>
+  //       <p>Deseas eliminar la tarea? {id}</p>
+  //       {console.log(id)}
+  //       <div>
+  //         <button
+  //           className="second-buttom"
+  //           onClick={() => {
+  //             deleteTarea(id);
+  //             toast.dismiss(t.id);
+  //           }}
+  //         >
+  //           Borrar
+  //         </button>
+  //         <button
+  //           className="second-buttom"
+  //           onClick={() => {
+  //             toast.dismiss(t.id);
+  //           }}
+  //         >
+  //           Cancelar
+  //         </button>
+  //       </div>
+  //     </div>
+  //   ));
+  // };
   return (
     <section>
       <article className="buttom">
@@ -139,6 +138,7 @@ const Details = () => {
             }
             actions.setSubmitting(false);
             toast.success("Tarea creada exitosamente!");
+            await window.location.reload();
           }}
           enableReinitialize={true}
         >
@@ -182,8 +182,9 @@ const Details = () => {
             </Form>
           )}
         </Formik>
+        <img className="detail-image" src={tarea.image.url} alt="Imagen" />
       </article>
-      <article className="activity">
+      {/* <article className="activity">
         <div>
           <h1 className="activity-head">{tarea.title}</h1>
           <div className="description">
@@ -207,8 +208,7 @@ const Details = () => {
                 </ul>
           </div>
         </div>
-        {/* ))} */}
-      </article>
+      </article> */}
     </section>
   );
 };

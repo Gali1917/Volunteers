@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/account.css";
-import Hexagon from "react-hexagon";
+import { sendEmailRequest } from "../api/email";
 import { useTareas } from "../context/tareasContext";
+import "../styles/account.css";
 
 const Account = () => {
   const { tareas } = useTareas();
@@ -13,6 +13,16 @@ const Account = () => {
       </div>
     );
 
+  // const SendEmail = () => {
+  //   // sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+  //   const msg = {
+  //     to: "carlitosgaleano16@gmail.com",
+  //     from: "carlgale93@hotmail.com",
+  //     subject: "Verificacion de actividades",
+  //     text: "Verificar actividades para enviar certificacion",
+  //     html: "<p>Aprobar Certificacion</p>",
+  //   };
+  // };
   return (
     <main>
       <section className="head-perfil">
@@ -92,11 +102,11 @@ const Account = () => {
             </div>
             <div className="activity-images-n1">
               <div className="card-imgpng uppng-n1 image-n1">
-                <img src={tareas[1].image.url} alt="" />
+                <img src={tareas[3].image.url} alt="" />
                 <img src={tareas[5].image.url} alt="" />
               </div>
               <div className="card-imgpng centerpng-n1 centerpngimg-n1 image-n1">
-                <img src={tareas[1].image.url} alt="" />
+                <img src={tareas[0].image.url} alt="" />
                 <img src={tareas[2].image.url} alt="" />
                 <img src={tareas[4].image.url} alt="" />
                 <img src={tareas[6].image.url} alt="" />
@@ -104,7 +114,7 @@ const Account = () => {
               </div>
               <div className="card-imgpng botpng-n1 botpngimg-n1 image-n1">
                 <img src={tareas[1].image.url} alt="" />
-                <img src={tareas[8].image.url} alt="" />
+                <img src={tareas[7].image.url} alt="" />
               </div>
               <div className="card-imgpng uppng-n1">
                 <Link to={`/details/${tareas[3]._id}`}>
@@ -529,7 +539,10 @@ const Account = () => {
           </div>
         </article>
         <div className="pdf">
-          <Link className="second-buttom certificado" id="certificado">
+          <Link className="second-buttom certificado" id="certificado" 
+          onClick={
+            sendEmailRequest()
+          }>
             OBTEN TU CERTIFICADO
           </Link>
         </div>
