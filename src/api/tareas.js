@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const getTareasRequest = async () => await axios.get("/tareas");
+export const getTareasRequest = async () => await axios.get("https://volunteers.vercel.app/tareas");
 export const getTareaRequest = async (id) => await axios.get("/tareas/" + id);
 export const postTareasRequest = async (tarea) => {
   const form = new FormData();

@@ -6,12 +6,12 @@ import "../styles/account.css";
 
 const Account = () => {
   const { tareas } = useTareas();
-  if (tareas.length === 0)
-    return (
-      <div>
-        <h1>No hay fotografias aun</h1>
-      </div>
-    );
+  // if (tareas.length === 0)
+  //   return (
+  //     <div>
+  //       <h1>No hay fotografias aun</h1>
+  //     </div>
+  //   );
 
   // const SendEmail = () => {
   //   // sgMail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -101,7 +101,7 @@ const Account = () => {
               </p>
             </div>
             <div className="activity-images-n1">
-              <div className="card-imgpng uppng-n1 image-n1">
+              {/* <div className="card-imgpng uppng-n1 image-n1">
                 <img src={tareas[3].image.url} alt="" />
                 <img src={tareas[5].image.url} alt="" />
               </div>
@@ -115,8 +115,23 @@ const Account = () => {
               <div className="card-imgpng botpng-n1 botpngimg-n1 image-n1">
                 <img src={tareas[1].image.url} alt="" />
                 <img src={tareas[7].image.url} alt="" />
+              </div> */}
+              <div className="card-imgpng uppng-n1 image-n1">
+                <img src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png" alt="" />
+                <img src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png" alt="" />
               </div>
-              <div className="card-imgpng uppng-n1">
+              <div className="card-imgpng centerpng-n1 centerpngimg-n1 image-n1">
+                <img src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png" alt="" />
+                <img src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png" alt="" />
+                <img src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png" alt="" />
+                <img src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png" alt="" />
+                <img src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png" alt="" />
+              </div>
+              <div className="card-imgpng botpng-n1 botpngimg-n1 image-n1">
+                <img src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png" alt="" />
+                <img src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png" alt="" />
+              </div>
+              {/* <div className="card-imgpng uppng-n1">
                 <Link to={`/details/${tareas[3]._id}`}>
                   <img
                     className="hexagon-1"
@@ -191,6 +206,82 @@ const Account = () => {
                     alt=""
                   />
                 </Link>
+              </div> */}
+              <div className="card-imgpng uppng-n1">
+                <Link to='/details'>
+                  <img
+                    className="hexagon-1"
+                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
+                    alt=""
+                  />
+                </Link>
+
+                <Link to={`/details`}>
+                  <img
+                    className="hexagon-2"
+                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
+                    alt=""
+                  />
+                </Link>
+              </div>
+
+              <div className="card-imgpng centerpng-n1">
+                <Link to={`/details`}>
+                  <img
+                    className="hexagon-3"
+                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
+                    alt=""
+                  />
+                </Link>
+
+                <Link to={`/details`}>
+                  <img
+                    className="hexagon-4"
+                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
+                    alt=""
+                  />
+                </Link>
+
+                <Link to={`/details`}>
+                  <img
+                    className="hexagon-5"
+                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
+                    alt=""
+                  />
+                </Link>
+
+                <Link to={`/details`}>
+                  <img
+                    className="hexagon-6"
+                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
+                    alt=""
+                  />
+                </Link>
+
+                <Link to={`/details`}>
+                  <img
+                    className="hexagon-7"
+                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
+                    alt=""
+                  />
+                </Link>
+              </div>
+              <div className="card-imgpng botpng-n1">
+                <Link to={`/details`}>
+                  <img
+                    className="hexagon-8"
+                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
+                    alt=""
+                  />
+                </Link>
+
+                <Link to={`/details`}>
+                  <img
+                    className="hexagon-9"
+                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
+                    alt=""
+                  />
+                </Link>
               </div>
             </div>
           </div>
@@ -257,50 +348,50 @@ const Account = () => {
             <div className="card-imgpng-n2 uppng-n2 uppngimg-n2 image-n2">
               <img
                 className="activity-img"
-                src="https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
                 alt=""
               />
               <img
                 className="activity-img"
-                src="https://images.pexels.com/photos/2265247/pexels-photo-2265247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
                 alt=""
               />
               <img
                 className="activity-img"
-                src="https://images.pexels.com/photos/14218611/pexels-photo-14218611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
                 alt=""
               />
             </div>
             <div className="card-imgpng-n2 centerpng1-n2 centerpng1img-n2 image-n2">
               <img
-                src="https://images.pexels.com/photos/14197381/pexels-photo-14197381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
                 alt=""
               />
               <img
-                src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
                 alt=""
               />
             </div>
 
             <div className="card-imgpng-n2 centerpng2-n2 image-n2">
               <img
-                src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
                 alt=""
               />
             </div>
             <div className="card-imgpng-n2 centerpng3-n2 centerpng3img-n2 image-n2">
               <img
-                src="https://images.pexels.com/photos/414181/pexels-photo-414181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
                 alt=""
               />
               <img
-                src="https://images.pexels.com/photos/8797307/pexels-photo-8797307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
                 alt=""
               />
             </div>
             <div className="card-imgpng-n2 botpng-n2 image-n2">
               <img
-                src="https://images.pexels.com/photos/129574/pexels-photo-129574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
                 alt=""
               />
             </div>
@@ -428,50 +519,50 @@ const Account = () => {
               <div className="card-imgpng-n3 uppng-n3 uppngimg-n3 image-n3">
                 <img
                   className="activity-img"
-                  src="https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
                   alt=""
                 />
               </div>
               <div className="card-imgpng-n3 centerpng1-n3 centerpng1img-n3 image-n3">
                 <img
                   className="activity-img"
-                  src="https://images.pexels.com/photos/2265247/pexels-photo-2265247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
                   alt=""
                 />
                 <img
                   className="activity-img"
-                  src="https://images.pexels.com/photos/14218611/pexels-photo-14218611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
                   alt=""
                 />
               </div>
               <div className="card-imgpng-n3 centerpng2-n3 centerpng2img-n3 image-n3">
                 <img
-                  src="https://images.pexels.com/photos/14197381/pexels-photo-14197381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
                   alt=""
                 />
                 <img
-                  src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
                   alt=""
                 />
 
                 <img
-                  src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
                   alt=""
                 />
               </div>
               <div className="card-imgpng-n3 centerpng3-n3 centerpng3img-n3 image-n3">
                 <img
-                  src="https://images.pexels.com/photos/414181/pexels-photo-414181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
                   alt=""
                 />
                 <img
-                  src="https://images.pexels.com/photos/8797307/pexels-photo-8797307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
                   alt=""
                 />
               </div>
               <div className="card-imgpng-n3 botpng-n3 image-n3">
                 <img
-                  src="https://images.pexels.com/photos/129574/pexels-photo-129574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
                   alt=""
                 />
               </div>
