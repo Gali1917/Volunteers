@@ -118,19 +118,30 @@ const Account = () => {
                 </div>
                 <div className="activity-images-n1">
                   <div className="card-imgpng uppng-n1 image-n1">
-                    <img src={tareas[4].image.url} alt="" />
-                    <img src={tareas[5].image.url} alt="" />
+                    {tareas[3]?.image && tareas[3].image.url && <img src={tareas[3].image.url} alt="" />}
+                    {tareas[5]?.image && tareas[5].image.url && <img src={tareas[5].image.url} alt="" />}
+
+                    {/* <img src={tareas[5].image.url} alt="" /> */}
                   </div>
                   <div className="card-imgpng centerpng-n1 centerpngimg-n1 image-n1">
+                  {tareas[0]?.image && tareas[0].image.url && <img src={tareas[0].image.url} alt="" />}
+                  {tareas[2]?.image && tareas[2].image.url && <img src={tareas[2].image.url} alt="" />}
+                  {tareas[4]?.image && tareas[4].image.url && <img src={tareas[4].image.url} alt="" />}
+                  {tareas[6]?.image && tareas[6].image.url && <img src={tareas[6].image.url} alt="" />}
+                  {tareas[8]?.image && tareas[8].image.url && <img src={tareas[8].image.url} alt="" />}
+{/* 
                     <img src={tareas[0].image.url} alt="" />
                     <img src={tareas[2].image.url} alt="" />
                     <img src={tareas[4].image.url} alt="" />
                     <img src={tareas[6].image.url} alt="" />
-                    <img src={tareas[8].image.url} alt="" />
+                    <img src={tareas[8].image.url} alt="" /> */}
                   </div>
                   <div className="card-imgpng botpng-n1 botpngimg-n1 image-n1">
-                    <img src={tareas[1].image.url} alt="" />
-                    <img src={tareas[7].image.url} alt="" />
+                  {tareas[1]?.image && tareas[1].image.url && <img src={tareas[1].image.url} alt="" />}
+                  {tareas[7]?.image && tareas[7].image.url && <img src={tareas[7].image.url} alt="" />}
+
+                    {/* <img src={tareas[1].image.url} alt="" />
+                    <img src={tareas[7].image.url} alt="" /> */}
                   </div>
 
                   <div className="card-imgpng uppng-n1">
