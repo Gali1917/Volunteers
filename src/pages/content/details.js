@@ -16,6 +16,16 @@ const Details = () => {
     description: "",
     image: null,
   });
+    const [loading, setLoading] = useState(true);
+    useEffect(() =>{
+    const delay = 2000;
+    const timer = setTimeout(() =>{
+      setLoading(false);
+    }, delay);
+    return () =>{
+      clearTimeout(timer);
+    };
+  }, []);
   useEffect(() => {
     (async () => {
       if (params.id) {
@@ -122,6 +132,10 @@ const Details = () => {
   // };
   return (
     <section>
+      {loading ? (
+        <div>Cargando...</div>
+      ) : (
+
       <article className="buttom">
         <Formik
           initialValues={tarea}
@@ -184,7 +198,7 @@ const Details = () => {
         </Formik>
         <img className="detail-image" src={tarea.image.url} alt="Imagen" />
       </article>
-      {/* <article className="activity">
+      /* <article className="activity">
         <div>
           <h1 className="activity-head">{tarea.title}</h1>
           <div className="description">
@@ -208,8 +222,10 @@ const Details = () => {
                 </ul>
           </div>
         </div>
-      </article> */}
+      </article> */
+      )}
     </section>
+
   );
 };
 
