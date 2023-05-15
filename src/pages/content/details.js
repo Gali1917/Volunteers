@@ -16,13 +16,13 @@ const Details = () => {
     description: "",
     image: null,
   });
-    const [loading, setLoading] = useState(true);
-    useEffect(() =>{
-    const delay = 2000;
-    const timer = setTimeout(() =>{
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const delay = 1500;
+    const timer = setTimeout(() => {
       setLoading(false);
     }, delay);
-    return () =>{
+    return () => {
       clearTimeout(timer);
     };
   }, []);
@@ -135,70 +135,69 @@ const Details = () => {
       {loading ? (
         <div>Cargando...</div>
       ) : (
+        <article className="buttom">
+          <Formik
+            initialValues={tarea}
+            validationSchema={Yup.object({
+              title: Yup.string().required("El titulo es requerido"),
+              description: Yup.string().required("La descripcion es requerida"),
+            })}
+            onSubmit={async (values, actions) => {
+              console.log(values);
+              if (params.id) {
+                await updateTarea(params.id, values);
+              } else {
+                await postTarea(values);
+              }
+              actions.setSubmitting(false);
+              toast.success("Tarea creada exitosamente!");
+              await window.location.reload();
+            }}
+            enableReinitialize={true}
+          >
+            {({ handleSubmit, setFieldValue, isSubmitting }) => (
+              <Form className="form" onSubmit={handleSubmit}>
+                <div className="input-label-form">
+                  <label htmlFor="title">Titulo</label>
+                  <Field
+                    className="input-form input-form-un"
+                    name="title"
+                    placeholder="Titulo"
+                  />
+                  <ErrorMessage component="p" name="title" />
+                </div>
+                <div className="input-label-form">
+                  <label htmlFor="description">Descripcion</label>
 
-      <article className="buttom">
-        <Formik
-          initialValues={tarea}
-          validationSchema={Yup.object({
-            title: Yup.string().required("El titulo es requerido"),
-            description: Yup.string().required("La descripcion es requerida"),
-          })}
-          onSubmit={async (values, actions) => {
-            console.log(values);
-            if (params.id) {
-              await updateTarea(params.id, values);
-            } else {
-              await postTarea(values);
-            }
-            actions.setSubmitting(false);
-            toast.success("Tarea creada exitosamente!");
-            await window.location.reload();
-          }}
-          enableReinitialize={true}
-        >
-          {({ handleSubmit, setFieldValue, isSubmitting }) => (
-            <Form className="form" onSubmit={handleSubmit}>
-              <div className="input-label-form">
-                <label htmlFor="title">Titulo</label>
-                <Field
-                  className="input-form input-form-un"
-                  name="title"
-                  placeholder="Titulo"
-                />
-                <ErrorMessage component="p" name="title" />
-              </div>
-              <div className="input-label-form">
-                <label htmlFor="description">Descripcion</label>
-
-                <Field
-                  component="textarea"
-                  className="input-form input-form-un"
-                  name="description"
-                  placeholder="Descripcion"
-                />
-                <ErrorMessage component="p" name="description" />
-              </div>
-              <div className="input-label-form">
-                <label htmlFor="image">Imagen</label>
-                <input
-                  className="second-buttom"
-                  type="file"
-                  onChange={(e) => setFieldValue("image", e.target.files[0])}
-                />
-              </div>
-              <button
-                className="second-buttom send"
-                type="submit"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? "Cargando" : "Actualizar"}
-              </button>
-            </Form>
-          )}
-        </Formik>
-        <img className="detail-image" src={tarea.image.url} alt="Imagen" />
-      </article>
-      /* <article className="activity">
+                  <Field
+                    component="textarea"
+                    className="input-form input-form-un"
+                    name="description"
+                    placeholder="Descripcion"
+                  />
+                  <ErrorMessage component="p" name="description" />
+                </div>
+                <div className="input-label-form">
+                  <label htmlFor="image">Imagen</label>
+                  <input
+                    className="second-buttom"
+                    type="file"
+                    onChange={(e) => setFieldValue("image", e.target.files[0])}
+                  />
+                </div>
+                <button
+                  className="second-buttom send"
+                  type="submit"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Cargando" : "Actualizar"}
+                </button>
+              </Form>
+            )}
+          </Formik>
+          <img className="detail-image" src={tarea.image.url} alt="Imagen" />
+        </article>
+        /* <article className="activity">
         <div>
           <h1 className="activity-head">{tarea.title}</h1>
           <div className="description">
@@ -225,7 +224,6 @@ const Details = () => {
       </article> */
       )}
     </section>
-
   );
 };
 
