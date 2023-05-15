@@ -6,12 +6,12 @@ import "../styles/account.css";
 
 const Account = () => {
   const { tareas } = useTareas();
-  // if (tareas.length === 0)
-  //   return (
-  //     <div>
-  //       <h1>No hay fotografias aun</h1>
-  //     </div>
-  //   );
+  if (tareas.length === 0)
+    return (
+      <div>
+        <h1>No hay fotografias aun</h1>
+      </div>
+    );
 
   // const SendEmail = () => {
   //   // sgMail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -101,8 +101,8 @@ const Account = () => {
               </p>
             </div>
             <div className="activity-images-n1">
-              {/* <div className="card-imgpng uppng-n1 image-n1">
-                <img src={tareas[3].image.url} alt="" />
+              <div className="card-imgpng uppng-n1 image-n1">
+                <img src={tareas[4].image.url} alt="" />
                 <img src={tareas[5].image.url} alt="" />
               </div>
               <div className="card-imgpng centerpng-n1 centerpngimg-n1 image-n1">
@@ -115,23 +115,9 @@ const Account = () => {
               <div className="card-imgpng botpng-n1 botpngimg-n1 image-n1">
                 <img src={tareas[1].image.url} alt="" />
                 <img src={tareas[7].image.url} alt="" />
-              </div> */}
-              <div className="card-imgpng uppng-n1 image-n1">
-                <img src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png" alt="" />
-                <img src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png" alt="" />
               </div>
-              <div className="card-imgpng centerpng-n1 centerpngimg-n1 image-n1">
-                <img src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png" alt="" />
-                <img src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png" alt="" />
-                <img src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png" alt="" />
-                <img src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png" alt="" />
-                <img src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png" alt="" />
-              </div>
-              <div className="card-imgpng botpng-n1 botpngimg-n1 image-n1">
-                <img src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png" alt="" />
-                <img src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png" alt="" />
-              </div>
-              {/* <div className="card-imgpng uppng-n1">
+              
+              <div className="card-imgpng uppng-n1">
                 <Link to={`/details/${tareas[3]._id}`}>
                   <img
                     className="hexagon-1"
@@ -206,83 +192,8 @@ const Account = () => {
                     alt=""
                   />
                 </Link>
-              </div> */}
-              <div className="card-imgpng uppng-n1">
-                <Link to='/details'>
-                  <img
-                    className="hexagon-1"
-                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
-                    alt=""
-                  />
-                </Link>
-
-                <Link to={`/details`}>
-                  <img
-                    className="hexagon-2"
-                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
-                    alt=""
-                  />
-                </Link>
               </div>
-
-              <div className="card-imgpng centerpng-n1">
-                <Link to={`/details`}>
-                  <img
-                    className="hexagon-3"
-                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
-                    alt=""
-                  />
-                </Link>
-
-                <Link to={`/details`}>
-                  <img
-                    className="hexagon-4"
-                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
-                    alt=""
-                  />
-                </Link>
-
-                <Link to={`/details`}>
-                  <img
-                    className="hexagon-5"
-                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
-                    alt=""
-                  />
-                </Link>
-
-                <Link to={`/details`}>
-                  <img
-                    className="hexagon-6"
-                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
-                    alt=""
-                  />
-                </Link>
-
-                <Link to={`/details`}>
-                  <img
-                    className="hexagon-7"
-                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
-                    alt=""
-                  />
-                </Link>
-              </div>
-              <div className="card-imgpng botpng-n1">
-                <Link to={`/details`}>
-                  <img
-                    className="hexagon-8"
-                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
-                    alt=""
-                  />
-                </Link>
-
-                <Link to={`/details`}>
-                  <img
-                    className="hexagon-9"
-                    src="https://i.postimg.cc/xd2xN0gB/bloque-nivel-1-320p.png"
-                    alt=""
-                  />
-                </Link>
-              </div>
+              
             </div>
           </div>
           <div className="mark-bottom">
@@ -343,116 +254,116 @@ const Account = () => {
                 medio de técnicas, costumbres y tradiciones.
               </p>
             </div>
-          </div>
-          <div className="activity-images-n2">
-            <div className="card-imgpng-n2 uppng-n2 uppngimg-n2 image-n2">
-              <img
-                className="activity-img"
-                src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
-                alt=""
-              />
-              <img
-                className="activity-img"
-                src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
-                alt=""
-              />
-              <img
-                className="activity-img"
-                src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
-                alt=""
-              />
-            </div>
-            <div className="card-imgpng-n2 centerpng1-n2 centerpng1img-n2 image-n2">
-              <img
-                src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
-                alt=""
-              />
-              <img
-                src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
-                alt=""
-              />
-            </div>
-
-            <div className="card-imgpng-n2 centerpng2-n2 image-n2">
-              <img
-                src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
-                alt=""
-              />
-            </div>
-            <div className="card-imgpng-n2 centerpng3-n2 centerpng3img-n2 image-n2">
-              <img
-                src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
-                alt=""
-              />
-              <img
-                src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
-                alt=""
-              />
-            </div>
-            <div className="card-imgpng-n2 botpng-n2 image-n2">
-              <img
-                src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
-                alt=""
-              />
-            </div>
-            <div className="card-imgpng-n2 uppng-n2">
-              <Link to="/details/">
+            <div className="activity-images-n2">
+              <div className="card-imgpng-n2 uppng-n2 uppngimg-n2 image-n2">
                 <img
-                  className="hexagon-1"
+                  className="activity-img"
+                  src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
+                  alt=""
+                />
+                <img
+                  className="activity-img"
+                  src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
+                  alt=""
+                />
+                <img
+                  className="activity-img"
+                  src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
+                  alt=""
+                />
+              </div>
+              <div className="card-imgpng-n2 centerpng1-n2 centerpng1img-n2 image-n2">
+                <img
+                  src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
+                  alt=""
+                />
+                <img
+                  src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
+                  alt=""
+                />
+              </div>
+
+              <div className="card-imgpng-n2 centerpng2-n2 image-n2">
+                <img
+                  src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
+                  alt=""
+                />
+              </div>
+              <div className="card-imgpng-n2 centerpng3-n2 centerpng3img-n2 image-n2">
+                <img
+                  src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
+                  alt=""
+                />
+                <img
+                  src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
+                  alt=""
+                />
+              </div>
+              <div className="card-imgpng-n2 botpng-n2 image-n2">
+                <img
+                  src="https://res.cloudinary.com/dd8a6qc45/image/upload/v1683044613/Volunteers/nsjozcsdxzhmvlvtv7ah.png"
+                  alt=""
+                />
+              </div>
+              <div className="card-imgpng-n2 uppng-n2">
+                <Link to="/details/">
+                  <img
+                    className="hexagon-1"
+                    src="https://i.postimg.cc/xjmcdnJK/bloque-nivel-2.png"
+                    alt=""
+                  />
+                </Link>
+
+                <img
+                  className="hexagon-2"
                   src="https://i.postimg.cc/xjmcdnJK/bloque-nivel-2.png"
                   alt=""
                 />
-              </Link>
+                <img
+                  className="hexagon-3"
+                  src="https://i.postimg.cc/xjmcdnJK/bloque-nivel-2.png"
+                  alt=""
+                />
+              </div>
+              <div className="card-imgpng-n2 centerpng1-n2">
+                <img
+                  className="hexagon-4"
+                  src="https://i.postimg.cc/xjmcdnJK/bloque-nivel-2.png"
+                  alt=""
+                />
+                <img
+                  className="hexagon-5"
+                  src="https://i.postimg.cc/xjmcdnJK/bloque-nivel-2.png"
+                  alt=""
+                />
+              </div>
+              <div className="card-imgpng-n2 centerpng2-n2">
+                <img
+                  className="hexagon-6"
+                  src="https://i.postimg.cc/xjmcdnJK/bloque-nivel-2.png"
+                  alt=""
+                />
+              </div>
 
-              <img
-                className="hexagon-2"
-                src="https://i.postimg.cc/xjmcdnJK/bloque-nivel-2.png"
-                alt=""
-              />
-              <img
-                className="hexagon-3"
-                src="https://i.postimg.cc/xjmcdnJK/bloque-nivel-2.png"
-                alt=""
-              />
-            </div>
-            <div className="card-imgpng-n2 centerpng1-n2">
-              <img
-                className="hexagon-4"
-                src="https://i.postimg.cc/xjmcdnJK/bloque-nivel-2.png"
-                alt=""
-              />
-              <img
-                className="hexagon-5"
-                src="https://i.postimg.cc/xjmcdnJK/bloque-nivel-2.png"
-                alt=""
-              />
-            </div>
-            <div className="card-imgpng-n2 centerpng2-n2">
-              <img
-                className="hexagon-6"
-                src="https://i.postimg.cc/xjmcdnJK/bloque-nivel-2.png"
-                alt=""
-              />
-            </div>
-
-            <div className="card-imgpng-n2 centerpng3-n2">
-              <img
-                className="hexagon-7"
-                src="https://i.postimg.cc/xjmcdnJK/bloque-nivel-2.png"
-                alt=""
-              />
-              <img
-                className="hexagon-8"
-                src="https://i.postimg.cc/xjmcdnJK/bloque-nivel-2.png"
-                alt=""
-              />
-            </div>
-            <div className="card-imgpng-n2 botpng-n2">
-              <img
-                className="hexagon-9"
-                src="https://i.postimg.cc/xjmcdnJK/bloque-nivel-2.png"
-                alt=""
-              />
+              <div className="card-imgpng-n2 centerpng3-n2">
+                <img
+                  className="hexagon-7"
+                  src="https://i.postimg.cc/xjmcdnJK/bloque-nivel-2.png"
+                  alt=""
+                />
+                <img
+                  className="hexagon-8"
+                  src="https://i.postimg.cc/xjmcdnJK/bloque-nivel-2.png"
+                  alt=""
+                />
+              </div>
+              <div className="card-imgpng-n2 botpng-n2">
+                <img
+                  className="hexagon-9"
+                  src="https://i.postimg.cc/xjmcdnJK/bloque-nivel-2.png"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
           <div className="mark-bottom">
@@ -630,10 +541,11 @@ const Account = () => {
           </div>
         </article>
         <div className="pdf">
-          <Link className="second-buttom certificado" id="certificado" 
-          onClick={
-            sendEmailRequest()
-          }>
+          <Link
+            className="second-buttom certificado"
+            id="certificado"
+            // onClick={sendEmailRequest()}
+          >
             OBTEN TU CERTIFICADO
           </Link>
         </div>

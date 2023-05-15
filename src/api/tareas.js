@@ -1,20 +1,20 @@
 import axios from "axios";
 
-export const getTareasRequest = async () => await axios.get("https://volunteers.vercel.app/tareas");
-export const getTareaRequest = async (id) => await axios.get("/tareas/" + id);
+export const getTareasRequest = async () => await axios.get("/api/tareas");
+export const getTareaRequest = async (id) => await axios.get("/api/tareas/" + id);
 export const postTareasRequest = async (tarea) => {
   const form = new FormData();
   for (let key in tarea) {
     form.append(key, tarea[key]);
   }
-  return await axios.post("/tareas", form, {
+  return await axios.post("/api/tareas", form, {
     headers: {
       "Content-Type": "multipart/form-data",
     },
   });
 };
 export const deleteTareaRequest = async (id) =>
-  await axios.delete("/tareas/" + id);
+  await axios.delete("/api/tareas/" + id);
 // export const updateTareaRequest = async (id, newFields) =>
 //     await axios.put("/tareas/" + id, newFields);
 export const updateTareaRequest = async (id, newFields) => {
@@ -24,7 +24,7 @@ export const updateTareaRequest = async (id, newFields) => {
 
     }
   
-    return await axios.put(`/tareas/${id}`, form, {
+    return await axios.put(`/api/tareas/${id}`, form, {
       headers: {
         'Content-Type': 'multipart/form-data'
       }
