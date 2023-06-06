@@ -73,6 +73,8 @@
     display: flex;
     align-items: center;
     white-space: nowrap;
+    pointer-events: none;
+
 }
 .input-signup{
     background-color: white;
@@ -80,6 +82,7 @@
     text-align: center;
     border-radius: 20px;
     border: 0;
+
 }
 .input-signup:focus {
     outline: none;
@@ -88,10 +91,27 @@
 
 .input-signup:focus + .label-signup,
 .input-signup:valid + .label-signup {
-    transform: translateX(120px);
+    transform: translate(120px,0px);
     font-size: 12px;
     transition: .6s;
     color: white;
+}
+
+.error-message{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+    font-size: 20px;
+}
+.error-message-country{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+    font-size: 20px;
 }
 
 .button-enter-signup{

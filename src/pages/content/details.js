@@ -48,7 +48,6 @@ const Details = () => {
             })}
             onSubmit={async (values, actions) => {
               console.log(values);
-              console.log(";alksjdf");
               // if (params.id) {
               //   await updateTarea(params.id, values);
               // } else {

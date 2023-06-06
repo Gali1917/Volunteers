@@ -9,6 +9,7 @@ import SignUp from "./pages/forms/signUp";
 import Conditions from "./pages/conditions";
 import Nosotros from "./pages/nosotros";
 import { TareasProvider } from "./context/tareasContext";
+import { UserProvider } from "./context/userContext";
 import Details from "./pages/content/details";
 
 function App() {
@@ -41,22 +42,24 @@ function App() {
       </header>
       <main>
         <TareasProvider>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/content" element={<Content />} />
-            <Route path="/account" element={<Account />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<SignUp />} />
-            <Route path="/conditions" element={<Conditions />} />
-            <Route path="*" element={<Index />} />
-            <Route path="/details/:id" element={<Details />} />
-            <Route path="/nosotros" element={<Nosotros />} />
-          </Routes>
-          <Toaster />
+          <UserProvider>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/content" element={<Content />} />
+              <Route path="/account" element={<Account />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<SignUp />} />
+              <Route path="/conditions" element={<Conditions />} />
+              <Route path="*" element={<Index />} />
+              <Route path="/details/:id" element={<Details />} />
+              <Route path="/nosotros" element={<Nosotros />} />
+            </Routes>
+            <Toaster />
+          </UserProvider>
         </TareasProvider>
       </main>
       <footer>
-        <Link to='/nosotros'>
+        <Link to="/nosotros">
           <h6>NOSOTROS</h6>
         </Link>
         <h6>VOLUNTEERS 2023</h6>
