@@ -378,9 +378,16 @@
   .second-buttom {
     font-size: 18px;
   }
+  .head-perfil {
+    margin-top: 0px;
+  }
+  .img-fondo {
+    width: 100vw;
+    height: calc(80vw / 2);
+  }
   .img-perfil {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
   }
 
   .activity {

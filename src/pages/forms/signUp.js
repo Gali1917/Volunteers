@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { useUser } from "../../context/userContext";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
@@ -7,7 +7,7 @@ import { toast } from "react-hot-toast";
 import "../../styles/signup.css";
 
 const SignUp = () => {
-  console.log(useUser.postUser);
+  const navigate = useNavigate();
   const { users, postUser } = useUser();
   const params = useParams();
   const [user, setUser] = useState({
@@ -42,6 +42,7 @@ const SignUp = () => {
                 await postUser(values);
                 actions.setSubmitting(false);
                 toast.success("Usuario creado exitosamente!");
+                navigate("/login");
               }}
               enableReinitialize={true}
               className="form"
@@ -78,6 +79,7 @@ const SignUp = () => {
                     <Field
                       className="input-signup"
                       name="email"
+                      type="email"
                       required
                     />
                     <label className="label-signup" htmlFor="email">
@@ -97,6 +99,7 @@ const SignUp = () => {
                     <Field
                       className="input-signup"
                       name="number"
+                      type="number"
                       required
                     />
                     <label className="label-signup" htmlFor="number">
@@ -116,6 +119,8 @@ const SignUp = () => {
                     <Field
                       className="input-signup"
                       name="document"
+                      type="number"
+
                       required
                     />
                     <label className="label-signup" htmlFor="document">
@@ -135,6 +140,7 @@ const SignUp = () => {
                     <Field
                       className="input-signup"
                       name="password"
+                      type="password"
                       required
                     />
                     <label className="label-signup" htmlFor="password">
@@ -199,7 +205,7 @@ const SignUp = () => {
                     </div>
                     <ErrorMessage className="error-message-country" component="p" name="country" />
                   </div>
-                  {/* <Link to="/account" className="button-sign"> */}
+                  {/* <Link to="/login" className="button-sign"> */}
                     <button
                       className="button-enter-signup"
                       type="submit"

@@ -1,5 +1,5 @@
 import { useState, createContext, useContext, useEffect } from "react";
-import { postSignUpRequest } from "../api/users";
+import { postSignInRequest, postSignUpRequest } from "../api/users";
 
 const userContext = createContext();
 
@@ -19,11 +19,20 @@ export const UserProvider = ({ children }) => {
       console.error(error);
     }
   };
+  const postSignIn = async (user) => {
+    try {
+      const res = await postSignInRequest(user);
+      setUser([...users, res.data]);
+    } catch (error) {
+      console.error(error);
+    }
+  };
   return (
     <userContext.Provider
       value={{
         users,
         postUser,
+        postSignIn,
       }}
     >
       {children}
