@@ -46,35 +46,29 @@ const Login = () => {
                   const signInSuccessful = await postSignIn(values);
                   actions.setSubmitting(false);
 
-                  if(signInSuccessful){
+                  if (signInSuccessful) {
                     toast.success("Sesion iniciada exitosamente!");
-                  }else{
+                    navigate("/account");
+                  } else {
                     toast.error("Credenciales invalidas. Intente nuevamente.");
                   }
-
-                  // navigate("/account");
                 }}
                 enableReinitialize={true}
                 className="form"
               >
                 {({ handleSubmit, isSubmitting }) => (
                   <Form onSubmit={handleSubmit}>
-                    <div className="input-label-signup">
-                      <div className="img-icon">
-                        <img
-                          className="icono"
-                          src="https://i.postimg.cc/fL6962YV/correo.png"
-                          alt=""
-                        />
-                        <img src="" alt="" />
+                    <div className="input-label">
+                      <div className="img-icon-user">
+                        <FontAwesomeIcon className="icono" icon={faUserCheck} />
                       </div>
                       <Field
-                        className="input-signup"
+                        className="input-login"
                         name="email"
                         type="email"
                         required
                       />
-                      <label className="label-signup" htmlFor="email">
+                      <label className="label-login" htmlFor="email">
                         Email
                       </label>
                       <ErrorMessage
@@ -83,22 +77,21 @@ const Login = () => {
                         name="email"
                       />
                     </div>
-                    <div className="input-label-signup">
-                      <div className="img-icon">
-                        <img
+                    <div className="input-label">
+                      <div className="img-icon-password">
+                        <FontAwesomeIcon
                           className="icono"
-                          src="https://i.postimg.cc/2SwnVxNt/CONTRASE-A.png"
-                          alt=""
+                          icon={faUnlockKeyhole}
                         />
                         <img src="" alt="" />
                       </div>
                       <Field
-                        className="input-signup"
+                        className="input-login"
                         name="password"
                         type="password"
                         required
                       />
-                      <label className="label-signup" htmlFor="password">
+                      <label className="label-login" htmlFor="password">
                         Contraseña
                       </label>
                       <ErrorMessage
@@ -107,15 +100,19 @@ const Login = () => {
                         name="password"
                       />
                     </div>
-                    {/* <Link to="/login" className="button-sign"> */}
-                    <button
-                      className="button-enter-signup"
-                      type="submit"
-                      disabled={isSubmitting}
-                    >
-                      {isSubmitting ? "Cargando" : "Actua por el planeta"}
-                    </button>
-                    {/* </Link> */}
+                    <div className="buttons">
+                      <button
+                        className="button-enter"
+                        type="submit"
+                        disabled={isSubmitting}
+                      >
+                        {isSubmitting ? "Cargando" : "Actua por el planeta"}
+                        <FontAwesomeIcon className="icono icon-enter" icon={faArrowAltCircleRight} />
+                      </button>
+                      <Link to="/signup" className="">
+                        <button className="button-signin">REGISTRARSE</button>
+                      </Link>
+                    </div>
                   </Form>
                 )}
               </Formik>

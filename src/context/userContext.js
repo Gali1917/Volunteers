@@ -23,8 +23,10 @@ export const UserProvider = ({ children }) => {
     try {
       const res = await postSignInRequest(user);
       setUser([...users, res.data]);
+      return true;
     } catch (error) {
       console.error(error);
+      return false;
     }
   };
   return (
